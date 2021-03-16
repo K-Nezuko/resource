@@ -1,0 +1,3 @@
+trojan=www.xihuanni.ml:443, password=trojan100866, over-tls=true, tls-verification=true, tls13=true, fast-open=false, udp-relay=false, tag=香港
+
+trojan=www.vvjm.tk:443, password=trojan100866, over-tls=true, tls-verification=true, tls13=true, fast-open=false, udp-relay=false, tag=台湾
