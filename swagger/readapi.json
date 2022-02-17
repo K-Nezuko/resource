@@ -58,19 +58,13 @@
       "name": "报表读服务"
     }
   ],
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["http"],
   "paths": {
     "/bbc/pay/downloadBill": {
       "post": {
-        "tags": [
-          "OPEN-BBC支付服务"
-        ],
+        "tags": ["OPEN-BBC支付服务"],
         "summary": "下载交易账单",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -120,8 +114,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "BBCBillQuery",
-              "$$ref": "#/definitions/BBCBillQuery"
+              "title": "BBCBillQuery"
             }
           }
         ],
@@ -142,8 +135,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«string»",
-              "$$ref": "#/definitions/CommonResponse«string»"
+              "title": "CommonResponse«string»"
             }
           }
         }
@@ -151,13 +143,9 @@
     },
     "/bbc/pay/create": {
       "post": {
-        "tags": [
-          "OPEN-BBC支付服务"
-        ],
+        "tags": ["OPEN-BBC支付服务"],
         "summary": "创建支付订单",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -258,8 +246,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "BBCPayRequest",
-              "$$ref": "#/definitions/BBCPayRequest"
+              "title": "BBCPayRequest"
             }
           }
         ],
@@ -328,15 +315,13 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "BBCPayResponse",
-                  "$$ref": "#/definitions/BBCPayResponse"
+                  "title": "BBCPayResponse"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«BBCPayResponse»",
-              "$$ref": "#/definitions/CommonResponse«BBCPayResponse»"
+              "title": "CommonResponse«BBCPayResponse»"
             }
           }
         }
@@ -344,13 +329,9 @@
     },
     "/bbc/pay/cancelPay": {
       "post": {
-        "tags": [
-          "OPEN-BBC支付服务"
-        ],
+        "tags": ["OPEN-BBC支付服务"],
         "summary": "取消支付订单",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -405,8 +386,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "BBCPayCancel",
-              "$$ref": "#/definitions/BBCPayCancel"
+              "title": "BBCPayCancel"
             }
           }
         ],
@@ -459,15 +439,13 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "BBCCancelResult",
-                  "$$ref": "#/definitions/BBCCancelResult"
+                  "title": "BBCCancelResult"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«BBCCancelResult»",
-              "$$ref": "#/definitions/CommonResponse«BBCCancelResult»"
+              "title": "CommonResponse«BBCCancelResult»"
             }
           }
         }
@@ -475,13 +453,9 @@
     },
     "/bbc/pay/refund": {
       "post": {
-        "tags": [
-          "OPEN-BBC支付服务"
-        ],
+        "tags": ["OPEN-BBC支付服务"],
         "summary": "支付退款",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -568,8 +542,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "BBCRefundRequest",
-              "$$ref": "#/definitions/BBCRefundRequest"
+              "title": "BBCRefundRequest"
             }
           }
         ],
@@ -633,15 +606,13 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "BBCRefundResponse",
-                  "$$ref": "#/definitions/BBCRefundResponse"
+                  "title": "BBCRefundResponse"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«BBCRefundResponse»",
-              "$$ref": "#/definitions/CommonResponse«BBCRefundResponse»"
+              "title": "CommonResponse«BBCRefundResponse»"
             }
           }
         }
@@ -649,13 +620,9 @@
     },
     "/bbc/pay/queryPay": {
       "post": {
-        "tags": [
-          "OPEN-BBC支付服务"
-        ],
+        "tags": ["OPEN-BBC支付服务"],
         "summary": "查询支付结果",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -710,8 +677,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "BBCPayQuery",
-              "$$ref": "#/definitions/BBCPayQuery"
+              "title": "BBCPayQuery"
             }
           }
         ],
@@ -780,15 +746,13 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "BBCPayResponse",
-                  "$$ref": "#/definitions/BBCPayResponse"
+                  "title": "BBCPayResponse"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«BBCPayResponse»",
-              "$$ref": "#/definitions/CommonResponse«BBCPayResponse»"
+              "title": "CommonResponse«BBCPayResponse»"
             }
           }
         }
@@ -796,13 +760,9 @@
     },
     "/bbc/pay/queryRefund": {
       "post": {
-        "tags": [
-          "OPEN-BBC支付服务"
-        ],
+        "tags": ["OPEN-BBC支付服务"],
         "summary": "查询退款结果",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -857,8 +817,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "BBCRefundQuery",
-              "$$ref": "#/definitions/BBCRefundQuery"
+              "title": "BBCRefundQuery"
             }
           }
         ],
@@ -922,15 +881,13 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "BBCRefundResponse",
-                  "$$ref": "#/definitions/BBCRefundResponse"
+                  "title": "BBCRefundResponse"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«BBCRefundResponse»",
-              "$$ref": "#/definitions/CommonResponse«BBCRefundResponse»"
+              "title": "CommonResponse«BBCRefundResponse»"
             }
           }
         }
@@ -938,13 +895,9 @@
     },
     "/bbcDataProvider/getSupplierStockForParam": {
       "post": {
-        "tags": [
-          "OPEN-BBC数据服务"
-        ],
+        "tags": ["OPEN-BBC数据服务"],
         "summary": "供应商库存批量查询",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -988,8 +941,7 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "GoodsFactoryItem",
-                    "$$ref": "#/definitions/GoodsFactoryItem"
+                    "title": "GoodsFactoryItem"
                   }
                 },
                 "supplierCodes": {
@@ -1000,8 +952,7 @@
                   }
                 }
               },
-              "title": "BBCSupplierGoodsStockRequest",
-              "$$ref": "#/definitions/BBCSupplierGoodsStockRequest"
+              "title": "BBCSupplierGoodsStockRequest"
             }
           }
         ],
@@ -1043,16 +994,14 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "BBCSupplierStockRespone",
-                    "$$ref": "#/definitions/BBCSupplierStockRespone"
+                    "title": "BBCSupplierStockRespone"
                   }
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«List«BBCSupplierStockRespone»»",
-              "$$ref": "#/definitions/CommonResponse«List«BBCSupplierStockRespone»»"
+              "title": "CommonResponse«List«BBCSupplierStockRespone»»"
             }
           }
         }
@@ -1060,13 +1009,9 @@
     },
     "/bbcDataProvider/getSupplierCombinationGoods": {
       "post": {
-        "tags": [
-          "OPEN-BBC数据服务"
-        ],
+        "tags": ["OPEN-BBC数据服务"],
         "summary": "供应商编码和商品编码查询商品上下架状态",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -1110,8 +1055,7 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "GoodsFactoryItem",
-                    "$$ref": "#/definitions/GoodsFactoryItem"
+                    "title": "GoodsFactoryItem"
                   }
                 },
                 "supplierCodes": {
@@ -1122,8 +1066,7 @@
                   }
                 }
               },
-              "title": "BBCGoodsFactoryRequest",
-              "$$ref": "#/definitions/BBCGoodsFactoryRequest"
+              "title": "BBCGoodsFactoryRequest"
             }
           }
         ],
@@ -1159,16 +1102,14 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "BBCGoodsFactoryResponse",
-                    "$$ref": "#/definitions/BBCGoodsFactoryResponse"
+                    "title": "BBCGoodsFactoryResponse"
                   }
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«List«BBCGoodsFactoryResponse»»",
-              "$$ref": "#/definitions/CommonResponse«List«BBCGoodsFactoryResponse»»"
+              "title": "CommonResponse«List«BBCGoodsFactoryResponse»»"
             }
           }
         }
@@ -1176,13 +1117,9 @@
     },
     "/bbcDataProvider/getAreaPage": {
       "post": {
-        "tags": [
-          "OPEN-BBC数据服务"
-        ],
+        "tags": ["OPEN-BBC数据服务"],
         "summary": "地址信息查询",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -1239,8 +1176,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "BBCAreaRequest",
-              "$$ref": "#/definitions/BBCAreaRequest"
+              "title": "BBCAreaRequest"
             }
           }
         ],
@@ -1304,8 +1240,7 @@
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "BBCAreaResponse",
-                        "$$ref": "#/definitions/BBCAreaResponse"
+                        "title": "BBCAreaResponse"
                       }
                     },
                     "totalNum": {
@@ -1315,15 +1250,13 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "PageData«BBCAreaResponse»",
-                  "$$ref": "#/definitions/PageData«BBCAreaResponse»"
+                  "title": "PageData«BBCAreaResponse»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "PageResponse«BBCAreaResponse»",
-              "$$ref": "#/definitions/PageResponse«BBCAreaResponse»"
+              "title": "PageResponse«BBCAreaResponse»"
             }
           }
         }
@@ -1331,13 +1264,9 @@
     },
     "/bbcDataProvider/getShipperPage": {
       "post": {
-        "tags": [
-          "OPEN-BBC数据服务"
-        ],
+        "tags": ["OPEN-BBC数据服务"],
         "summary": "物流公司查询服务",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -1385,8 +1314,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "BBCShipperRequest",
-              "$$ref": "#/definitions/BBCShipperRequest"
+              "title": "BBCShipperRequest"
             }
           }
         ],
@@ -1439,8 +1367,7 @@
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "BBCShipperResponse",
-                        "$$ref": "#/definitions/BBCShipperResponse"
+                        "title": "BBCShipperResponse"
                       }
                     },
                     "totalNum": {
@@ -1450,15 +1377,13 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "PageData«BBCShipperResponse»",
-                  "$$ref": "#/definitions/PageData«BBCShipperResponse»"
+                  "title": "PageData«BBCShipperResponse»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "PageResponse«BBCShipperResponse»",
-              "$$ref": "#/definitions/PageResponse«BBCShipperResponse»"
+              "title": "PageResponse«BBCShipperResponse»"
             }
           }
         }
@@ -1466,13 +1391,9 @@
     },
     "/bbcDataProvider/getLogisticList": {
       "post": {
-        "tags": [
-          "OPEN-BBC数据服务"
-        ],
+        "tags": ["OPEN-BBC数据服务"],
         "summary": "物流轨迹查询服务",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -1500,9 +1421,7 @@
             "in": "body",
             "schema": {
               "type": "object",
-              "required": [
-                "orderCode"
-              ],
+              "required": ["orderCode"],
               "properties": {
                 "logisticCode": {
                   "type": "string",
@@ -1513,8 +1432,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "BBCLogisticRequest",
-              "$$ref": "#/definitions/BBCLogisticRequest"
+              "title": "BBCLogisticRequest"
             }
           }
         ],
@@ -1572,21 +1490,18 @@
                               "type": "string"
                             }
                           },
-                          "title": "Trace",
-                          "$$ref": "#/definitions/Trace"
+                          "title": "Trace"
                         }
                       }
                     },
-                    "title": "BBCLogisticResponse",
-                    "$$ref": "#/definitions/BBCLogisticResponse"
+                    "title": "BBCLogisticResponse"
                   }
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«List«BBCLogisticResponse»»",
-              "$$ref": "#/definitions/CommonResponse«List«BBCLogisticResponse»»"
+              "title": "CommonResponse«List«BBCLogisticResponse»»"
             }
           }
         }
@@ -1594,13 +1509,9 @@
     },
     "/crm/voucher/apply": {
       "post": {
-        "tags": [
-          "OPEN-CRM系统"
-        ],
+        "tags": ["OPEN-CRM系统"],
         "summary": "CRM优惠券申请传BBC",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -1708,8 +1619,7 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "ApplyVoucher",
-                    "$$ref": "#/definitions/ApplyVoucher"
+                    "title": "ApplyVoucher"
                   }
                 },
                 "voucherType": {
@@ -1719,8 +1629,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "BBCVoucherApplyRequest",
-              "$$ref": "#/definitions/BBCVoucherApplyRequest"
+              "title": "BBCVoucherApplyRequest"
             }
           }
         ],
@@ -1741,8 +1650,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -1750,13 +1658,9 @@
     },
     "/wms/inOutDetailReceive": {
       "post": {
-        "tags": [
-          "OPEN-WMS系统"
-        ],
+        "tags": ["OPEN-WMS系统"],
         "summary": "出入库明细回传 WMS回传BBC",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -1834,8 +1738,7 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "表头",
-                  "$$ref": "#/definitions/表头"
+                  "title": "表头"
                 },
                 "items": {
                   "type": "array",
@@ -1885,13 +1788,11 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "行项目",
-                    "$$ref": "#/definitions/行项目"
+                    "title": "行项目"
                   }
                 }
               },
-              "title": "出入库明细接收entity",
-              "$$ref": "#/definitions/出入库明细接收entity"
+              "title": "出入库明细接收entity"
             }
           }
         ],
@@ -1912,8 +1813,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -1921,13 +1821,9 @@
     },
     "/wms/packageInfoReceive": {
       "post": {
-        "tags": [
-          "OPEN-WMS系统"
-        ],
+        "tags": ["OPEN-WMS系统"],
         "summary": "包裹信息回传 WMS回传BBC",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2005,8 +1901,7 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "表头",
-                  "$$ref": "#/definitions/表头"
+                  "title": "表头"
                 },
                 "items": {
                   "type": "array",
@@ -2056,13 +1951,11 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "行项目",
-                    "$$ref": "#/definitions/行项目"
+                    "title": "行项目"
                   }
                 }
               },
-              "title": "包裹信息接收entity",
-              "$$ref": "#/definitions/包裹信息接收entity"
+              "title": "包裹信息接收entity"
             }
           }
         ],
@@ -2083,8 +1976,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -2092,13 +1984,9 @@
     },
     "/bbcSupplierProvider/saveStockCurrentQty": {
       "post": {
-        "tags": [
-          "OPEN-供应商协同服务"
-        ],
+        "tags": ["OPEN-供应商协同服务"],
         "summary": "保存现货库存信息",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2156,8 +2044,7 @@
                     "allowEmptyValue": false
                   }
                 },
-                "title": "SupplierStockInfoRequest",
-                "$$ref": "#/definitions/SupplierStockInfoRequest"
+                "title": "SupplierStockInfoRequest"
               }
             }
           }
@@ -2176,8 +2063,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«Void»",
-              "$$ref": "#/definitions/CommonResponse«Void»"
+              "title": "CommonResponse«Void»"
             }
           }
         }
@@ -2185,13 +2071,9 @@
     },
     "/bbcSupplierProvider/acceptOutstockInfo": {
       "post": {
-        "tags": [
-          "OPEN-供应商协同服务"
-        ],
+        "tags": ["OPEN-供应商协同服务"],
         "summary": "出库信息接收",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2225,7 +2107,7 @@
                   "properties": {
                     "finished": {
                       "type": "boolean",
-                      "description": false,
+                      "example": false,
                       "description": "是否关单 true关单 false未关单",
                       "allowEmptyValue": false
                     },
@@ -2257,8 +2139,7 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "Header",
-                  "$$ref": "#/definitions/Header"
+                  "title": "Header"
                 },
                 "items": {
                   "type": "array",
@@ -2281,13 +2162,11 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "Item",
-                    "$$ref": "#/definitions/Item"
+                    "title": "Item"
                   }
                 }
               },
-              "title": "SupplierInOutRequest",
-              "$$ref": "#/definitions/SupplierInOutRequest"
+              "title": "SupplierInOutRequest"
             }
           }
         ],
@@ -2305,8 +2184,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«Void»",
-              "$$ref": "#/definitions/CommonResponse«Void»"
+              "title": "CommonResponse«Void»"
             }
           }
         }
@@ -2314,13 +2192,9 @@
     },
     "/bbcSupplierProvider/acceptPackageInfo": {
       "post": {
-        "tags": [
-          "OPEN-供应商协同服务"
-        ],
+        "tags": ["OPEN-供应商协同服务"],
         "summary": "包裹信息接收",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2354,7 +2228,7 @@
                   "properties": {
                     "finished": {
                       "type": "boolean",
-                      "description": false,
+                      "example": false,
                       "description": "是否关单 true关单 false未关单",
                       "allowEmptyValue": false
                     },
@@ -2386,8 +2260,7 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "Header",
-                  "$$ref": "#/definitions/Header"
+                  "title": "Header"
                 },
                 "items": {
                   "type": "array",
@@ -2410,13 +2283,11 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "Item",
-                    "$$ref": "#/definitions/Item"
+                    "title": "Item"
                   }
                 }
               },
-              "title": "SupplierPackageRequest",
-              "$$ref": "#/definitions/SupplierPackageRequest"
+              "title": "SupplierPackageRequest"
             }
           }
         ],
@@ -2434,8 +2305,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«Void»",
-              "$$ref": "#/definitions/CommonResponse«Void»"
+              "title": "CommonResponse«Void»"
             }
           }
         }
@@ -2443,13 +2313,9 @@
     },
     "/third/express/kdniao/logisticsTrackPush": {
       "post": {
-        "tags": [
-          "OPEN-快递系统"
-        ],
+        "tags": ["OPEN-快递系统"],
         "summary": "物流轨迹推送",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2499,13 +2365,9 @@
     },
     "/third/push/yhsh/orderCancel": {
       "post": {
-        "tags": [
-          "OPEN-第三方推送服务"
-        ],
+        "tags": ["OPEN-第三方推送服务"],
         "summary": "永辉生活订单冲销推送",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2548,13 +2410,9 @@
     },
     "/third/push/yhsh/order": {
       "post": {
-        "tags": [
-          "OPEN-第三方推送服务"
-        ],
+        "tags": ["OPEN-第三方推送服务"],
         "summary": "永辉生活订单推送",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2597,13 +2455,9 @@
     },
     "/third/pay/gat/payNotice": {
       "post": {
-        "tags": [
-          "OPEN-第三方支付通知"
-        ],
+        "tags": ["OPEN-第三方支付通知"],
         "summary": "关爱通支付结果通知",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2646,13 +2500,9 @@
     },
     "/third/pay/xiaohui/payNotice": {
       "post": {
-        "tags": [
-          "OPEN-第三方支付通知"
-        ],
+        "tags": ["OPEN-第三方支付通知"],
         "summary": "小辉支付结果通知",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2695,13 +2545,9 @@
     },
     "/third/pay/wx/payNotice": {
       "post": {
-        "tags": [
-          "OPEN-第三方支付通知"
-        ],
+        "tags": ["OPEN-第三方支付通知"],
         "summary": "微信支付结果通知",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2744,13 +2590,9 @@
     },
     "/third/pay/ali/payNotice": {
       "post": {
-        "tags": [
-          "OPEN-第三方支付通知"
-        ],
+        "tags": ["OPEN-第三方支付通知"],
         "summary": "支付宝支付结果通知",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2793,13 +2635,9 @@
     },
     "/third/pay/hebao/payNotice": {
       "post": {
-        "tags": [
-          "OPEN-第三方支付通知"
-        ],
+        "tags": ["OPEN-第三方支付通知"],
         "summary": "移动和包支付结果通知",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2841,8 +2679,7 @@
                   "type": "string"
                 }
               },
-              "title": "HebaoPayNoticeRequest",
-              "$$ref": "#/definitions/HebaoPayNoticeRequest"
+              "title": "HebaoPayNoticeRequest"
             }
           }
         ],
@@ -2858,13 +2695,9 @@
     },
     "/settle/compareOrderCount": {
       "post": {
-        "tags": [
-          "OPEN-结算系统"
-        ],
+        "tags": ["OPEN-结算系统"],
         "summary": "结算对账-对比订单数量",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -2920,8 +2753,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "SettleCompareCountRequest",
-              "$$ref": "#/definitions/SettleCompareCountRequest"
+              "title": "SettleCompareCountRequest"
             }
           }
         ],
@@ -2942,8 +2774,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -2951,13 +2782,9 @@
     },
     "/settle/handleMissingOrder": {
       "post": {
-        "tags": [
-          "OPEN-结算系统"
-        ],
+        "tags": ["OPEN-结算系统"],
         "summary": "结算对账-漏单补偿",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -3032,8 +2859,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "SettleHandleMissingRequest",
-              "$$ref": "#/definitions/SettleHandleMissingRequest"
+              "title": "SettleHandleMissingRequest"
             }
           }
         ],
@@ -3051,8 +2877,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«Void»",
-              "$$ref": "#/definitions/CommonResponse«Void»"
+              "title": "CommonResponse«Void»"
             }
           }
         }
@@ -3060,13 +2885,9 @@
     },
     "/finance/queryBbcOrderBillStatus": {
       "post": {
-        "tags": [
-          "OPEN-财务系统"
-        ],
+        "tags": ["OPEN-财务系统"],
         "summary": "查询订单状态",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -3155,8 +2976,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "财务月结账单查询",
-              "$$ref": "#/definitions/财务月结账单查询"
+              "title": "财务月结账单查询"
             }
           }
         ],
@@ -3254,16 +3074,14 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "BBCOrderBillResponse",
-                    "$$ref": "#/definitions/BBCOrderBillResponse"
+                    "title": "BBCOrderBillResponse"
                   }
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«List«BBCOrderBillResponse»»",
-              "$$ref": "#/definitions/CommonResponse«List«BBCOrderBillResponse»»"
+              "title": "CommonResponse«List«BBCOrderBillResponse»»"
             }
           }
         }
@@ -3271,13 +3089,9 @@
     },
     "/finance/voucherToBBC": {
       "post": {
-        "tags": [
-          "OPEN-财务系统"
-        ],
+        "tags": ["OPEN-财务系统"],
         "summary": "财务回传凭证给BBC",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -3354,13 +3168,11 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "行项目",
-                    "$$ref": "#/definitions/行项目"
+                    "title": "行项目"
                   }
                 }
               },
-              "title": "财务凭证To BBC",
-              "$$ref": "#/definitions/财务凭证To BBC"
+              "title": "财务凭证To BBC"
             }
           }
         ],
@@ -3381,8 +3193,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -3390,13 +3201,9 @@
     },
     "/scm/purchase/shippedDetailReceive": {
       "post": {
-        "tags": [
-          "OPEN-采购系统"
-        ],
+        "tags": ["OPEN-采购系统"],
         "summary": "出库明细回传回传BBC",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -3473,13 +3280,11 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "行项目",
-                    "$$ref": "#/definitions/行项目"
+                    "title": "行项目"
                   }
                 }
               },
-              "title": "采购出库明细接收",
-              "$$ref": "#/definitions/采购出库明细接收"
+              "title": "采购出库明细接收"
             }
           }
         ],
@@ -3500,8 +3305,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -3509,13 +3313,9 @@
     },
     "/scm/purchase/packageInfoReceive": {
       "post": {
-        "tags": [
-          "OPEN-采购系统"
-        ],
+        "tags": ["OPEN-采购系统"],
         "summary": "包裹信息回传回传BBC",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -3592,13 +3392,11 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "行项目",
-                    "$$ref": "#/definitions/行项目"
+                    "title": "行项目"
                   }
                 }
               },
-              "title": "采购包裹信息接收",
-              "$$ref": "#/definitions/采购包裹信息接收"
+              "title": "采购包裹信息接收"
             }
           }
         ],
@@ -3619,8 +3417,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -3628,13 +3425,9 @@
     },
     "/scm/purchase/orderChange": {
       "post": {
-        "tags": [
-          "OPEN-采购系统"
-        ],
+        "tags": ["OPEN-采购系统"],
         "summary": "采购单变更",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -3686,8 +3479,7 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "Item",
-                    "$$ref": "#/definitions/Item"
+                    "title": "Item"
                   }
                 },
                 "operationBy": {
@@ -3706,8 +3498,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "SupplierOrderChangeRequest",
-              "$$ref": "#/definitions/SupplierOrderChangeRequest"
+              "title": "SupplierOrderChangeRequest"
             }
           }
         ],
@@ -3728,8 +3519,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -3737,13 +3527,9 @@
     },
     "/task": {
       "post": {
-        "tags": [
-          "任务管理服务"
-        ],
+        "tags": ["任务管理服务"],
         "summary": "创建任务",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -3801,7 +3587,7 @@
                 },
                 "pushTaskQueue": {
                   "type": "boolean",
-                  "description": false,
+                  "example": false,
                   "description": "是否推送到任务队列，推送队列失败时自动取消",
                   "allowEmptyValue": false
                 },
@@ -3849,8 +3635,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "TaskCreateReq",
-              "$$ref": "#/definitions/TaskCreateReq"
+              "title": "TaskCreateReq"
             }
           }
         ],
@@ -3872,20 +3657,15 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«long»",
-              "$$ref": "#/definitions/CommonResponse«long»"
+              "title": "CommonResponse«long»"
             }
           }
         }
       },
       "get": {
-        "tags": [
-          "任务管理服务"
-        ],
+        "tags": ["任务管理服务"],
         "summary": "查询任务列表",
-        "consumes": [
-          "text/plain"
-        ],
+        "consumes": ["text/plain"],
         "parameters": [
           {
             "name": "login-token",
@@ -4102,16 +3882,14 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "TaskResp",
-                    "$$ref": "#/definitions/TaskResp"
+                    "title": "TaskResp"
                   }
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«List«TaskResp»»",
-              "$$ref": "#/definitions/CommonResponse«List«TaskResp»»"
+              "title": "CommonResponse«List«TaskResp»»"
             }
           }
         }
@@ -4119,13 +3897,9 @@
     },
     "/task/start": {
       "post": {
-        "tags": [
-          "任务管理服务"
-        ],
+        "tags": ["任务管理服务"],
         "summary": "启动任务处理",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -4153,9 +3927,7 @@
             "in": "body",
             "schema": {
               "type": "object",
-              "required": [
-                "taskId"
-              ],
+              "required": ["taskId"],
               "properties": {
                 "taskId": {
                   "type": "integer",
@@ -4170,8 +3942,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "TaskStartReq",
-              "$$ref": "#/definitions/TaskStartReq"
+              "title": "TaskStartReq"
             }
           }
         ],
@@ -4192,8 +3963,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -4201,13 +3971,9 @@
     },
     "/task/process/{id}": {
       "post": {
-        "tags": [
-          "任务管理服务"
-        ],
+        "tags": ["任务管理服务"],
         "summary": "处理任务",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -4255,8 +4021,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -4264,13 +4029,9 @@
     },
     "/task/finish": {
       "post": {
-        "tags": [
-          "任务管理服务"
-        ],
+        "tags": ["任务管理服务"],
         "summary": "完成任务",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -4298,10 +4059,7 @@
             "in": "body",
             "schema": {
               "type": "object",
-              "required": [
-                "taskId",
-                "taskResult"
-              ],
+              "required": ["taskId", "taskResult"],
               "properties": {
                 "attachmentList": {
                   "type": "array",
@@ -4321,8 +4079,7 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "Attachment",
-                    "$$ref": "#/definitions/Attachment"
+                    "title": "Attachment"
                   }
                 },
                 "progress": {
@@ -4354,7 +4111,7 @@
                 },
                 "taskResult": {
                   "type": "boolean",
-                  "description": false,
+                  "example": false,
                   "description": "任务结果：true-成功，false-失败",
                   "allowEmptyValue": false
                 },
@@ -4370,8 +4127,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "TaskFinishReq",
-              "$$ref": "#/definitions/TaskFinishReq"
+              "title": "TaskFinishReq"
             }
           }
         ],
@@ -4392,8 +4148,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -4401,13 +4156,9 @@
     },
     "/task/my": {
       "get": {
-        "tags": [
-          "任务管理服务"
-        ],
+        "tags": ["任务管理服务"],
         "summary": "我的任务列表",
-        "consumes": [
-          "text/plain"
-        ],
+        "consumes": ["text/plain"],
         "parameters": [
           {
             "name": "login-token",
@@ -4624,16 +4375,14 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "TaskResp",
-                    "$$ref": "#/definitions/TaskResp"
+                    "title": "TaskResp"
                   }
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«List«TaskResp»»",
-              "$$ref": "#/definitions/CommonResponse«List«TaskResp»»"
+              "title": "CommonResponse«List«TaskResp»»"
             }
           }
         }
@@ -4641,13 +4390,9 @@
     },
     "/task/progress": {
       "post": {
-        "tags": [
-          "任务管理服务"
-        ],
+        "tags": ["任务管理服务"],
         "summary": "更新任务进度",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -4675,9 +4420,7 @@
             "in": "body",
             "schema": {
               "type": "object",
-              "required": [
-                "taskId"
-              ],
+              "required": ["taskId"],
               "properties": {
                 "progress": {
                   "type": "integer",
@@ -4703,8 +4446,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "TaskProgressReq",
-              "$$ref": "#/definitions/TaskProgressReq"
+              "title": "TaskProgressReq"
             }
           }
         ],
@@ -4725,8 +4467,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -4734,13 +4475,9 @@
     },
     "/task/{id}": {
       "get": {
-        "tags": [
-          "任务管理服务"
-        ],
+        "tags": ["任务管理服务"],
         "summary": "查询任务",
-        "consumes": [
-          "text/plain"
-        ],
+        "consumes": ["text/plain"],
         "parameters": [
           {
             "name": "login-token",
@@ -4927,15 +4664,13 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "TaskResp",
-                  "$$ref": "#/definitions/TaskResp"
+                  "title": "TaskResp"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«TaskResp»",
-              "$$ref": "#/definitions/CommonResponse«TaskResp»"
+              "title": "CommonResponse«TaskResp»"
             }
           }
         }
@@ -4943,13 +4678,9 @@
     },
     "/task/my/clear": {
       "post": {
-        "tags": [
-          "任务管理服务"
-        ],
+        "tags": ["任务管理服务"],
         "summary": "清理我的任务",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -4977,9 +4708,7 @@
             "in": "body",
             "schema": {
               "type": "object",
-              "required": [
-                "sysCode"
-              ],
+              "required": ["sysCode"],
               "properties": {
                 "status": {
                   "type": "integer",
@@ -4995,8 +4724,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "TaskClearReq",
-              "$$ref": "#/definitions/TaskClearReq"
+              "title": "TaskClearReq"
             }
           }
         ],
@@ -5017,8 +4745,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«boolean»",
-              "$$ref": "#/definitions/CommonResponse«boolean»"
+              "title": "CommonResponse«boolean»"
             }
           }
         }
@@ -5026,13 +4753,9 @@
     },
     "/message/sendZtMS": {
       "post": {
-        "tags": [
-          "消息中心服务"
-        ],
+        "tags": ["消息中心服务"],
         "summary": "单条发送消息（中台、极光消息）",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -5090,8 +4813,7 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "MessageZtVO",
-                  "$$ref": "#/definitions/MessageZtVO"
+                  "title": "MessageZtVO"
                 },
                 "messageGroup": {
                   "type": "string",
@@ -5119,8 +4841,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "MessageZtSendReq",
-              "$$ref": "#/definitions/MessageZtSendReq"
+              "title": "MessageZtSendReq"
             }
           }
         ],
@@ -5141,8 +4862,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse",
-              "$$ref": "#/definitions/CommonResponse"
+              "title": "CommonResponse"
             }
           }
         }
@@ -5150,13 +4870,9 @@
     },
     "/message/sendTaskMS": {
       "post": {
-        "tags": [
-          "消息中心服务"
-        ],
+        "tags": ["消息中心服务"],
         "summary": "发送任务消息",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -5206,8 +4922,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "MessageTaskReq",
-              "$$ref": "#/definitions/MessageTaskReq"
+              "title": "MessageTaskReq"
             }
           }
         ],
@@ -5228,8 +4943,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse",
-              "$$ref": "#/definitions/CommonResponse"
+              "title": "CommonResponse"
             }
           }
         }
@@ -5237,13 +4951,9 @@
     },
     "/message/sendSMS": {
       "post": {
-        "tags": [
-          "消息中心服务"
-        ],
+        "tags": ["消息中心服务"],
         "summary": "发送短信",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -5301,8 +5011,7 @@
                   }
                 }
               },
-              "title": "MessageSMSReq",
-              "$$ref": "#/definitions/MessageSMSReq"
+              "title": "MessageSMSReq"
             }
           }
         ],
@@ -5323,8 +5032,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse",
-              "$$ref": "#/definitions/CommonResponse"
+              "title": "CommonResponse"
             }
           }
         }
@@ -5332,13 +5040,9 @@
     },
     "/message/sendZtBatchMS": {
       "post": {
-        "tags": [
-          "消息中心服务"
-        ],
+        "tags": ["消息中心服务"],
         "summary": "批量发送消息（中台、极光消息）",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -5396,8 +5100,7 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "MessageZtVO",
-                  "$$ref": "#/definitions/MessageZtVO"
+                  "title": "MessageZtVO"
                 },
                 "messageGroup": {
                   "type": "string",
@@ -5427,8 +5130,7 @@
                         "allowEmptyValue": false
                       }
                     },
-                    "title": "MessageToUserVO",
-                    "$$ref": "#/definitions/MessageToUserVO"
+                    "title": "MessageToUserVO"
                   }
                 },
                 "sysCode": {
@@ -5437,8 +5139,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "MessageZtSendBatchReq",
-              "$$ref": "#/definitions/MessageZtSendBatchReq"
+              "title": "MessageZtSendBatchReq"
             }
           }
         ],
@@ -5459,8 +5160,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse",
-              "$$ref": "#/definitions/CommonResponse"
+              "title": "CommonResponse"
             }
           }
         }
@@ -5468,13 +5168,9 @@
     },
     "/bsf/test/sql/query": {
       "post": {
-        "tags": [
-          "自动化测试依赖接口"
-        ],
+        "tags": ["自动化测试依赖接口"],
         "summary": "sql查询,from带上具体项目数据库名",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -5517,13 +5213,9 @@
     },
     "/bsf/test/sleep": {
       "get": {
-        "tags": [
-          "自动化测试依赖接口"
-        ],
+        "tags": ["自动化测试依赖接口"],
         "summary": "休眠接口,时程序中断对应毫秒数",
-        "consumes": [
-          "text/plain"
-        ],
+        "consumes": ["text/plain"],
         "parameters": [
           {
             "name": "login-token",
@@ -5577,13 +5269,9 @@
     },
     "/api/caisx/b2b/wms/customerGroupDetails": {
       "post": {
-        "tags": [
-          "容器读服务"
-        ],
+        "tags": ["容器读服务"],
         "summary": "分页查询客户分组列表配置明细",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -5614,12 +5302,12 @@
               "properties": {
                 "customerCode": {
                   "type": "string",
-                  "description": "主客户编码",
+                  "example": "主客户编码",
                   "allowEmptyValue": false
                 },
                 "groupId": {
                   "type": "string",
-                  "description": "客户分组Id",
+                  "example": "客户分组Id",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -5640,12 +5328,11 @@
                 },
                 "subCustomerCode": {
                   "type": "string",
-                  "description": "子客户编码",
+                  "example": "子客户编码",
                   "allowEmptyValue": false
                 }
               },
-              "title": "客户分组配置明细请求入参",
-              "$$ref": "#/definitions/客户分组配置明细请求入参"
+              "title": "客户分组配置明细请求入参"
             }
           }
         ],
@@ -5673,76 +5360,75 @@
                         "properties": {
                           "createBy": {
                             "type": "string",
-                            "description": "创建人",
+                            "example": "创建人",
                             "allowEmptyValue": false
                           },
                           "createTime": {
                             "type": "string",
                             "format": "date-time",
-                            "description": "创建时间",
+                            "example": "创建时间",
                             "allowEmptyValue": false
                           },
                           "customerCode": {
                             "type": "string",
-                            "description": "主客户编码",
+                            "example": "主客户编码",
                             "allowEmptyValue": false
                           },
                           "customerName": {
                             "type": "string",
-                            "description": "主客户名称",
+                            "example": "主客户名称",
                             "allowEmptyValue": false
                           },
                           "groupDetailId": {
                             "type": "integer",
                             "format": "int64",
-                            "description": "分组详情id",
+                            "example": "分组详情id",
                             "allowEmptyValue": false
                           },
                           "groupId": {
                             "type": "integer",
                             "format": "int64",
-                            "description": "客户分组ID",
+                            "example": "客户分组ID",
                             "allowEmptyValue": false
                           },
                           "groupName": {
                             "type": "string",
-                            "description": "客户分组名称",
+                            "example": "客户分组名称",
                             "allowEmptyValue": false
                           },
                           "subCustomerCode": {
                             "type": "string",
-                            "description": "子客户编码",
+                            "example": "子客户编码",
                             "allowEmptyValue": false
                           },
                           "subCustomerName": {
                             "type": "string",
-                            "description": "子客户名称",
+                            "example": "子客户名称",
                             "allowEmptyValue": false
                           },
                           "updateBy": {
                             "type": "string",
-                            "description": "最后更新人",
+                            "example": "最后更新人",
                             "allowEmptyValue": false
                           },
                           "updateTime": {
                             "type": "string",
                             "format": "date-time",
-                            "description": "更新时间",
+                            "example": "更新时间",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "description": "地点名称",
+                            "example": "地点名称",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "description": "分组详情id",
+                            "example": "分组详情id",
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "客户分组列表配置",
-                        "$$ref": "#/definitions/客户分组列表配置"
+                        "title": "客户分组列表配置"
                       }
                     },
                     "pages": {
@@ -5758,15 +5444,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«客户分组列表配置»",
-                  "$$ref": "#/definitions/PageResponse«客户分组列表配置»"
+                  "title": "PageResponse«客户分组列表配置»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«PageResponse«客户分组列表配置»»",
-              "$$ref": "#/definitions/CommonResponse«PageResponse«客户分组列表配置»»"
+              "title": "CommonResponse«PageResponse«客户分组列表配置»»"
             }
           }
         }
@@ -5774,13 +5458,9 @@
     },
     "/api/caisx/b2b/wms/containers/loadPage": {
       "post": {
-        "tags": [
-          "容器读服务"
-        ],
+        "tags": ["容器读服务"],
         "summary": "容器列表查询列表",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -5811,37 +5491,37 @@
               "properties": {
                 "containerCode": {
                   "type": "string",
-                  "description": "容器码",
+                  "example": "容器码",
                   "allowEmptyValue": false
                 },
                 "containerStatusCode": {
                   "type": "string",
-                  "description": "容器状态",
+                  "example": "容器状态",
                   "allowEmptyValue": false
                 },
                 "customerCode": {
                   "type": "string",
-                  "description": "客户编码",
+                  "example": "客户编码",
                   "allowEmptyValue": false
                 },
                 "customerName": {
                   "type": "string",
-                  "description": "客户名称",
+                  "example": "客户名称",
                   "allowEmptyValue": false
                 },
                 "driverCode": {
                   "type": "string",
-                  "description": "司机签到码",
+                  "example": "司机签到码",
                   "allowEmptyValue": false
                 },
                 "groupId": {
                   "type": "string",
-                  "description": "客户分组ID",
+                  "example": "客户分组ID",
                   "allowEmptyValue": false
                 },
                 "isVirtual": {
                   "type": "string",
-                  "description": "容器配置",
+                  "example": "容器配置",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -5858,7 +5538,7 @@
                 },
                 "parentContainerCode": {
                   "type": "string",
-                  "description": "父级容器码",
+                  "example": "父级容器码",
                   "allowEmptyValue": false
                 },
                 "size": {
@@ -5867,12 +5547,11 @@
                 },
                 "subCustomerCode": {
                   "type": "string",
-                  "description": "子客户编码",
+                  "example": "子客户编码",
                   "allowEmptyValue": false
                 }
               },
-              "title": "容器列表查询入参",
-              "$$ref": "#/definitions/容器列表查询入参"
+              "title": "容器列表查询入参"
             }
           }
         ],
@@ -5900,127 +5579,126 @@
                         "properties": {
                           "containerCode": {
                             "type": "string",
-                            "description": "容器码",
+                            "example": "容器码",
                             "allowEmptyValue": false
                           },
                           "containerStatusCode": {
                             "type": "string",
-                            "description": "容器状态Code",
+                            "example": "容器状态Code",
                             "allowEmptyValue": false
                           },
                           "containerStatusName": {
                             "type": "string",
-                            "description": "容器状态Name",
+                            "example": "容器状态Name",
                             "allowEmptyValue": false
                           },
                           "createBy": {
                             "type": "string",
-                            "description": "创建者",
+                            "example": "创建者",
                             "allowEmptyValue": false
                           },
                           "createTime": {
                             "type": "string",
                             "format": "date-time",
-                            "description": "创建时间",
+                            "example": "创建时间",
                             "allowEmptyValue": false
                           },
                           "customerCode": {
                             "type": "string",
-                            "description": "客户编码",
+                            "example": "客户编码",
                             "allowEmptyValue": false
                           },
                           "customerName": {
                             "type": "string",
-                            "description": "客户名称",
+                            "example": "客户名称",
                             "allowEmptyValue": false
                           },
                           "driverCode": {
                             "type": "string",
-                            "description": "司机签到码",
+                            "example": "司机签到码",
                             "allowEmptyValue": false
                           },
                           "driverName": {
                             "type": "string",
-                            "description": "司机名称",
+                            "example": "司机名称",
                             "allowEmptyValue": false
                           },
                           "groupId": {
                             "type": "integer",
                             "format": "int64",
-                            "description": "分组ID",
+                            "example": "分组ID",
                             "allowEmptyValue": false
                           },
                           "groupName": {
                             "type": "string",
-                            "description": "客户分组名称",
+                            "example": "客户分组名称",
                             "allowEmptyValue": false
                           },
                           "id": {
                             "type": "integer",
                             "format": "int64",
-                            "description": "主键ID",
+                            "example": "主键ID",
                             "allowEmptyValue": false
                           },
                           "isVirtual": {
                             "type": "string",
-                            "description": "容器配置",
+                            "example": "容器配置",
                             "allowEmptyValue": false
                           },
                           "parentContainerCode": {
                             "type": "string",
-                            "description": "父级容器码",
+                            "example": "父级容器码",
                             "allowEmptyValue": false
                           },
                           "saleOrderCodes": {
                             "type": "string",
-                            "description": "销售单号",
+                            "example": "销售单号",
                             "allowEmptyValue": false
                           },
                           "shippingTime": {
                             "type": "string",
                             "format": "date-time",
-                            "description": "发货时间",
+                            "example": "发货时间",
                             "allowEmptyValue": false
                           },
                           "status": {
                             "type": "string",
-                            "description": "容器回收状态",
+                            "example": "容器回收状态",
                             "allowEmptyValue": false
                           },
                           "subCustomerCode": {
                             "type": "string",
-                            "description": "子客户编码",
+                            "example": "子客户编码",
                             "allowEmptyValue": false
                           },
                           "subCustomerName": {
                             "type": "string",
-                            "description": "子客户名称",
+                            "example": "子客户名称",
                             "allowEmptyValue": false
                           },
                           "updateBy": {
                             "type": "string",
-                            "description": "更新者",
+                            "example": "更新者",
                             "allowEmptyValue": false
                           },
                           "updateTime": {
                             "type": "string",
                             "format": "date-time",
-                            "description": "更新时间",
+                            "example": "更新时间",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "description": "仓库编码",
+                            "example": "仓库编码",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "description": "仓库名称",
+                            "example": "仓库名称",
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "容器列表查询出参",
-                        "$$ref": "#/definitions/容器列表查询出参"
+                        "title": "容器列表查询出参"
                       }
                     },
                     "pages": {
@@ -6036,15 +5714,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«容器列表查询出参»",
-                  "$$ref": "#/definitions/PageResponse«容器列表查询出参»"
+                  "title": "PageResponse«容器列表查询出参»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«PageResponse«容器列表查询出参»»",
-              "$$ref": "#/definitions/CommonResponse«PageResponse«容器列表查询出参»»"
+              "title": "CommonResponse«PageResponse«容器列表查询出参»»"
             }
           }
         }
@@ -6052,13 +5728,9 @@
     },
     "/api/caisx/b2b/wms/container/recoverList": {
       "post": {
-        "tags": [
-          "容器读服务"
-        ],
+        "tags": ["容器读服务"],
         "summary": "容器回收列表查询",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -6094,7 +5766,7 @@
                 },
                 "containerCode": {
                   "type": "string",
-                  "description": "容器码",
+                  "example": "容器码",
                   "allowEmptyValue": false
                 },
                 "endTime": {
@@ -6104,12 +5776,12 @@
                 },
                 "groupId": {
                   "type": "string",
-                  "description": "客户分组ID",
+                  "example": "客户分组ID",
                   "allowEmptyValue": false
                 },
                 "isVirtual": {
                   "type": "string",
-                  "description": "容器配置",
+                  "example": "容器配置",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -6131,17 +5803,16 @@
                 "status": {
                   "type": "integer",
                   "format": "int32",
-                  "description": "容器回收状态",
+                  "example": "容器回收状态",
                   "allowEmptyValue": false
                 },
                 "subCustomerCode": {
                   "type": "string",
-                  "description": "子客户编码",
+                  "example": "子客户编码",
                   "allowEmptyValue": false
                 }
               },
-              "title": "容器回收列表查询入参",
-              "$$ref": "#/definitions/容器回收列表查询入参"
+              "title": "容器回收列表查询入参"
             }
           }
         ],
@@ -6169,127 +5840,126 @@
                         "properties": {
                           "containerCode": {
                             "type": "string",
-                            "description": "容器码",
+                            "example": "容器码",
                             "allowEmptyValue": false
                           },
                           "containerStatusCode": {
                             "type": "string",
-                            "description": "容器状态Code",
+                            "example": "容器状态Code",
                             "allowEmptyValue": false
                           },
                           "containerStatusName": {
                             "type": "string",
-                            "description": "容器状态Name",
+                            "example": "容器状态Name",
                             "allowEmptyValue": false
                           },
                           "createBy": {
                             "type": "string",
-                            "description": "创建者",
+                            "example": "创建者",
                             "allowEmptyValue": false
                           },
                           "createTime": {
                             "type": "string",
                             "format": "date-time",
-                            "description": "创建时间",
+                            "example": "创建时间",
                             "allowEmptyValue": false
                           },
                           "customerCode": {
                             "type": "string",
-                            "description": "客户编码",
+                            "example": "客户编码",
                             "allowEmptyValue": false
                           },
                           "customerName": {
                             "type": "string",
-                            "description": "客户名称",
+                            "example": "客户名称",
                             "allowEmptyValue": false
                           },
                           "driverCode": {
                             "type": "string",
-                            "description": "司机签到码",
+                            "example": "司机签到码",
                             "allowEmptyValue": false
                           },
                           "driverName": {
                             "type": "string",
-                            "description": "司机名称",
+                            "example": "司机名称",
                             "allowEmptyValue": false
                           },
                           "groupId": {
                             "type": "integer",
                             "format": "int64",
-                            "description": "分组ID",
+                            "example": "分组ID",
                             "allowEmptyValue": false
                           },
                           "groupName": {
                             "type": "string",
-                            "description": "客户分组名称",
+                            "example": "客户分组名称",
                             "allowEmptyValue": false
                           },
                           "id": {
                             "type": "integer",
                             "format": "int64",
-                            "description": "主键ID",
+                            "example": "主键ID",
                             "allowEmptyValue": false
                           },
                           "isVirtual": {
                             "type": "string",
-                            "description": "容器配置",
+                            "example": "容器配置",
                             "allowEmptyValue": false
                           },
                           "parentContainerCode": {
                             "type": "string",
-                            "description": "父级容器码",
+                            "example": "父级容器码",
                             "allowEmptyValue": false
                           },
                           "saleOrderCodes": {
                             "type": "string",
-                            "description": "销售单号",
+                            "example": "销售单号",
                             "allowEmptyValue": false
                           },
                           "shippingTime": {
                             "type": "string",
                             "format": "date-time",
-                            "description": "发货时间",
+                            "example": "发货时间",
                             "allowEmptyValue": false
                           },
                           "status": {
                             "type": "string",
-                            "description": "容器回收状态",
+                            "example": "容器回收状态",
                             "allowEmptyValue": false
                           },
                           "subCustomerCode": {
                             "type": "string",
-                            "description": "子客户编码",
+                            "example": "子客户编码",
                             "allowEmptyValue": false
                           },
                           "subCustomerName": {
                             "type": "string",
-                            "description": "子客户名称",
+                            "example": "子客户名称",
                             "allowEmptyValue": false
                           },
                           "updateBy": {
                             "type": "string",
-                            "description": "更新者",
+                            "example": "更新者",
                             "allowEmptyValue": false
                           },
                           "updateTime": {
                             "type": "string",
                             "format": "date-time",
-                            "description": "更新时间",
+                            "example": "更新时间",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "description": "仓库编码",
+                            "example": "仓库编码",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "description": "仓库名称",
+                            "example": "仓库名称",
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "容器列表查询出参",
-                        "$$ref": "#/definitions/容器列表查询出参"
+                        "title": "容器列表查询出参"
                       }
                     },
                     "pages": {
@@ -6305,15 +5975,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«容器列表查询出参»",
-                  "$$ref": "#/definitions/PageResponse«容器列表查询出参»"
+                  "title": "PageResponse«容器列表查询出参»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«PageResponse«容器列表查询出参»»",
-              "$$ref": "#/definitions/CommonResponse«PageResponse«容器列表查询出参»»"
+              "title": "CommonResponse«PageResponse«容器列表查询出参»»"
             }
           }
         }
@@ -6321,13 +5989,9 @@
     },
     "/api/caisx/b2b/wms/drivers/containers": {
       "post": {
-        "tags": [
-          "容器读服务"
-        ],
+        "tags": ["容器读服务"],
         "summary": "容器报损列表——按司机",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -6399,8 +6063,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "容器报损入参",
-              "$$ref": "#/definitions/容器报损入参"
+              "title": "容器报损入参"
             }
           }
         ],
@@ -6448,8 +6111,7 @@
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "容器报损查询出参",
-                        "$$ref": "#/definitions/容器报损查询出参"
+                        "title": "容器报损查询出参"
                       }
                     },
                     "pages": {
@@ -6465,15 +6127,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«容器报损查询出参»",
-                  "$$ref": "#/definitions/PageResponse«容器报损查询出参»"
+                  "title": "PageResponse«容器报损查询出参»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«PageResponse«容器报损查询出参»»",
-              "$$ref": "#/definitions/CommonResponse«PageResponse«容器报损查询出参»»"
+              "title": "CommonResponse«PageResponse«容器报损查询出参»»"
             }
           }
         }
@@ -6481,13 +6141,9 @@
     },
     "/api/caisx/b2b/wms/customers/containers": {
       "post": {
-        "tags": [
-          "容器读服务"
-        ],
+        "tags": ["容器读服务"],
         "summary": "容器报损列表——按子客户",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -6559,8 +6215,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "容器报损入参",
-              "$$ref": "#/definitions/容器报损入参"
+              "title": "容器报损入参"
             }
           }
         ],
@@ -6608,8 +6263,7 @@
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "容器报损查询出参",
-                        "$$ref": "#/definitions/容器报损查询出参"
+                        "title": "容器报损查询出参"
                       }
                     },
                     "pages": {
@@ -6625,15 +6279,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«容器报损查询出参»",
-                  "$$ref": "#/definitions/PageResponse«容器报损查询出参»"
+                  "title": "PageResponse«容器报损查询出参»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«PageResponse«容器报损查询出参»»",
-              "$$ref": "#/definitions/CommonResponse«PageResponse«容器报损查询出参»»"
+              "title": "CommonResponse«PageResponse«容器报损查询出参»»"
             }
           }
         }
@@ -6641,13 +6293,9 @@
     },
     "/api/caisx/b2b/wms/drivers/unRecoverContainers": {
       "post": {
-        "tags": [
-          "容器读服务"
-        ],
+        "tags": ["容器读服务"],
         "summary": "容器报损明细列表——按司机",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -6719,8 +6367,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "容器报损入参",
-              "$$ref": "#/definitions/容器报损入参"
+              "title": "容器报损入参"
             }
           }
         ],
@@ -6791,8 +6438,7 @@
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "容器报损返参",
-                        "$$ref": "#/definitions/容器报损返参"
+                        "title": "容器报损返参"
                       }
                     },
                     "pages": {
@@ -6808,15 +6454,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«容器报损返参»",
-                  "$$ref": "#/definitions/PageResponse«容器报损返参»"
+                  "title": "PageResponse«容器报损返参»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«PageResponse«容器报损返参»»",
-              "$$ref": "#/definitions/CommonResponse«PageResponse«容器报损返参»»"
+              "title": "CommonResponse«PageResponse«容器报损返参»»"
             }
           }
         }
@@ -6824,13 +6468,9 @@
     },
     "/api/caisx/b2b/wms/customers/unRecoverContainers": {
       "post": {
-        "tags": [
-          "容器读服务"
-        ],
+        "tags": ["容器读服务"],
         "summary": "容器报损明细列表——按客户",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -6902,8 +6542,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "容器报损入参",
-              "$$ref": "#/definitions/容器报损入参"
+              "title": "容器报损入参"
             }
           }
         ],
@@ -6974,8 +6613,7 @@
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "容器报损返参",
-                        "$$ref": "#/definitions/容器报损返参"
+                        "title": "容器报损返参"
                       }
                     },
                     "pages": {
@@ -6991,15 +6629,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«容器报损返参»",
-                  "$$ref": "#/definitions/PageResponse«容器报损返参»"
+                  "title": "PageResponse«容器报损返参»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«PageResponse«容器报损返参»»",
-              "$$ref": "#/definitions/CommonResponse«PageResponse«容器报损返参»»"
+              "title": "CommonResponse«PageResponse«容器报损返参»»"
             }
           }
         }
@@ -7007,13 +6643,9 @@
     },
     "/api/caisx/b2b/wms/customers/unRecoverContainerDetailInfo": {
       "post": {
-        "tags": [
-          "容器读服务"
-        ],
+        "tags": ["容器读服务"],
         "summary": "容器报损详情",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -7102,15 +6734,13 @@
                       "allowEmptyValue": false
                     }
                   },
-                  "title": "容器报损返参",
-                  "$$ref": "#/definitions/容器报损返参"
+                  "title": "容器报损返参"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«容器报损返参»",
-              "$$ref": "#/definitions/CommonResponse«容器报损返参»"
+              "title": "CommonResponse«容器报损返参»"
             }
           }
         }
@@ -7118,13 +6748,9 @@
     },
     "/api/caisx/b2b/wms/containers/details": {
       "post": {
-        "tags": [
-          "容器读服务"
-        ],
+        "tags": ["容器读服务"],
         "summary": "容器明细列表查询",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -7155,17 +6781,17 @@
               "properties": {
                 "containerCode": {
                   "type": "string",
-                  "description": "容器码",
+                  "example": "容器码",
                   "allowEmptyValue": false
                 },
                 "containerStatusCode": {
                   "type": "string",
-                  "description": "容器状态",
+                  "example": "容器状态",
                   "allowEmptyValue": false
                 },
                 "isVirtual": {
                   "type": "string",
-                  "description": "容器类型配置",
+                  "example": "容器类型配置",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -7178,7 +6804,7 @@
                 },
                 "outCode": {
                   "type": "string",
-                  "description": "出库单号",
+                  "example": "出库单号",
                   "allowEmptyValue": false
                 },
                 "page": {
@@ -7187,12 +6813,12 @@
                 },
                 "parentContainerCode": {
                   "type": "string",
-                  "description": "父级容器码",
+                  "example": "父级容器码",
                   "allowEmptyValue": false
                 },
                 "productCode": {
                   "type": "string",
-                  "description": "商品编码",
+                  "example": "商品编码",
                   "allowEmptyValue": false
                 },
                 "size": {
@@ -7201,32 +6827,31 @@
                 },
                 "status": {
                   "type": "string",
-                  "description": "容器状态",
+                  "example": "容器状态",
                   "allowEmptyValue": false
                 },
                 "subCustomerCode": {
                   "type": "string",
-                  "description": "客户编码",
+                  "example": "客户编码",
                   "allowEmptyValue": false
                 },
                 "subCustomerName": {
                   "type": "string",
-                  "description": "客户名称",
+                  "example": "客户名称",
                   "allowEmptyValue": false
                 },
                 "taskOrderCode": {
                   "type": "string",
-                  "description": "工单编码",
+                  "example": "工单编码",
                   "allowEmptyValue": false
                 },
                 "warehouseCode": {
                   "type": "string",
-                  "description": "仓库编码",
+                  "example": "仓库编码",
                   "allowEmptyValue": false
                 }
               },
-              "title": "容器明细列表查询入参",
-              "$$ref": "#/definitions/容器明细列表查询入参"
+              "title": "容器明细列表查询入参"
             }
           }
         ],
@@ -7254,89 +6879,88 @@
                         "properties": {
                           "containerCode": {
                             "type": "string",
-                            "description": "容器码",
+                            "example": "容器码",
                             "allowEmptyValue": false
                           },
                           "containerStatusCode": {
                             "type": "integer",
                             "format": "int32",
-                            "description": "容器状态Code",
+                            "example": "容器状态Code",
                             "allowEmptyValue": false
                           },
                           "containerStatusName": {
                             "type": "string",
-                            "description": "容器状态Name",
+                            "example": "容器状态Name",
                             "allowEmptyValue": false
                           },
                           "createTime": {
                             "type": "string",
                             "format": "date-time",
-                            "description": "创建时间",
+                            "example": "创建时间",
                             "allowEmptyValue": false
                           },
                           "id": {
                             "type": "string",
-                            "description": "主键ID",
+                            "example": "主键ID",
                             "allowEmptyValue": false
                           },
                           "isVirtual": {
                             "type": "string",
-                            "description": "容器配置",
+                            "example": "容器配置",
                             "allowEmptyValue": false
                           },
                           "outCode": {
                             "type": "string",
-                            "description": "订单编码",
+                            "example": "订单编码",
                             "allowEmptyValue": false
                           },
                           "productCode": {
                             "type": "string",
-                            "description": "商品编码",
+                            "example": "商品编码",
                             "allowEmptyValue": false
                           },
                           "productName": {
                             "type": "string",
-                            "description": "商品名称",
+                            "example": "商品名称",
                             "allowEmptyValue": false
                           },
                           "qty": {
                             "type": "number",
-                            "description": "数量",
+                            "example": "数量",
                             "allowEmptyValue": false
                           },
                           "saleOrderCode": {
                             "type": "string",
-                            "description": "销售单号",
+                            "example": "销售单号",
                             "allowEmptyValue": false
                           },
                           "subCustomerCode": {
                             "type": "string",
-                            "description": "客户编码",
+                            "example": "客户编码",
                             "allowEmptyValue": false
                           },
                           "subCustomerName": {
                             "type": "string",
-                            "description": "客户名称",
+                            "example": "客户名称",
                             "allowEmptyValue": false
                           },
                           "taskOrderCode": {
                             "type": "string",
-                            "description": "任务编码",
+                            "example": "任务编码",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "description": "仓库编码",
+                            "example": "仓库编码",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "description": "仓库名称",
+                            "example": "仓库名称",
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "容器明细列表查询出参",
-                        "$$ref": "#/definitions/容器明细列表查询出参"
+                        "title": "容器明细列表查询出参"
                       }
                     },
                     "pages": {
@@ -7352,15 +6976,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«容器明细列表查询出参»",
-                  "$$ref": "#/definitions/PageResponse«容器明细列表查询出参»"
+                  "title": "PageResponse«容器明细列表查询出参»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«PageResponse«容器明细列表查询出参»»",
-              "$$ref": "#/definitions/CommonResponse«PageResponse«容器明细列表查询出参»»"
+              "title": "CommonResponse«PageResponse«容器明细列表查询出参»»"
             }
           }
         }
@@ -7368,13 +6990,9 @@
     },
     "/api/caisx/b2b/wms/containerRules/loadPage": {
       "post": {
-        "tags": [
-          "容器读服务"
-        ],
+        "tags": ["容器读服务"],
         "summary": "容器生成规则查询",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -7405,38 +7023,38 @@
               "properties": {
                 "beginNumber": {
                   "type": "string",
-                  "description": "起始号码",
+                  "example": "起始号码",
                   "allowEmptyValue": false
                 },
                 "codePrefix": {
                   "type": "string",
-                  "description": "号码前缀",
+                  "example": "号码前缀",
                   "allowEmptyValue": false
                 },
                 "currentNumber": {
                   "type": "string",
-                  "description": "当前号码",
+                  "example": "当前号码",
                   "allowEmptyValue": false
                 },
                 "description": {
                   "type": "string",
-                  "description": "号段描述",
+                  "example": "号段描述",
                   "allowEmptyValue": false
                 },
                 "endNumber": {
                   "type": "string",
-                  "description": "结束号码",
+                  "example": "结束号码",
                   "allowEmptyValue": false
                 },
                 "id": {
                   "type": "integer",
                   "format": "int64",
-                  "description": "id",
+                  "example": "id",
                   "allowEmptyValue": false
                 },
                 "isVirtual": {
                   "type": "string",
-                  "description": "容器配置",
+                  "example": "容器配置",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -7457,17 +7075,16 @@
                 },
                 "warehouseCode": {
                   "type": "string",
-                  "description": "仓库编码",
+                  "example": "仓库编码",
                   "allowEmptyValue": false
                 },
                 "warehouseName": {
                   "type": "string",
-                  "description": "仓库名称",
+                  "example": "仓库名称",
                   "allowEmptyValue": false
                 }
               },
-              "title": "容器生成规则配置表",
-              "$$ref": "#/definitions/容器生成规则配置表"
+              "title": "容器生成规则配置表"
             }
           }
         ],
@@ -7495,75 +7112,74 @@
                         "properties": {
                           "beginNumber": {
                             "type": "string",
-                            "description": "起始号码",
+                            "example": "起始号码",
                             "allowEmptyValue": false
                           },
                           "codePrefix": {
                             "type": "string",
-                            "description": "号码前缀",
+                            "example": "号码前缀",
                             "allowEmptyValue": false
                           },
                           "createBy": {
                             "type": "string",
-                            "description": "创建者",
+                            "example": "创建者",
                             "allowEmptyValue": false
                           },
                           "createTime": {
                             "type": "string",
                             "format": "date-time",
-                            "description": "创建时间",
+                            "example": "创建时间",
                             "allowEmptyValue": false
                           },
                           "currentNumber": {
                             "type": "string",
-                            "description": "当前号码",
+                            "example": "当前号码",
                             "allowEmptyValue": false
                           },
                           "description": {
                             "type": "string",
-                            "description": "号段描述",
+                            "example": "号段描述",
                             "allowEmptyValue": false
                           },
                           "endNumber": {
                             "type": "string",
-                            "description": "结束号码",
+                            "example": "结束号码",
                             "allowEmptyValue": false
                           },
                           "id": {
                             "type": "integer",
                             "format": "int64",
-                            "description": "id",
+                            "example": "id",
                             "allowEmptyValue": false
                           },
                           "isVirtual": {
                             "type": "string",
-                            "description": "容器配置",
+                            "example": "容器配置",
                             "allowEmptyValue": false
                           },
                           "updateBy": {
                             "type": "string",
-                            "description": "更新者",
+                            "example": "更新者",
                             "allowEmptyValue": false
                           },
                           "updateTime": {
                             "type": "string",
                             "format": "date-time",
-                            "description": "更新时间",
+                            "example": "更新时间",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "description": "仓库编码",
+                            "example": "仓库编码",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "description": "仓库名称",
+                            "example": "仓库名称",
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "ContainerGenerateRuleResponse",
-                        "$$ref": "#/definitions/ContainerGenerateRuleResponse"
+                        "title": "ContainerGenerateRuleResponse"
                       }
                     },
                     "pages": {
@@ -7579,15 +7195,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«ContainerGenerateRuleResponse»",
-                  "$$ref": "#/definitions/PageResponse«ContainerGenerateRuleResponse»"
+                  "title": "PageResponse«ContainerGenerateRuleResponse»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«PageResponse«ContainerGenerateRuleResponse»»",
-              "$$ref": "#/definitions/CommonResponse«PageResponse«ContainerGenerateRuleResponse»»"
+              "title": "CommonResponse«PageResponse«ContainerGenerateRuleResponse»»"
             }
           }
         }
@@ -7595,13 +7209,9 @@
     },
     "/api/caisx/b2b/wms/pdaTaskPicking/pdaTaskPickingExport": {
       "post": {
-        "tags": [
-          "导出读服务"
-        ],
+        "tags": ["导出读服务"],
         "summary": "导出",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -7632,28 +7242,28 @@
               "properties": {
                 "containerCode": {
                   "type": "string",
-                  "description": "容器号",
+                  "example": "容器号",
                   "allowEmptyValue": false
                 },
                 "deliveryStatus": {
                   "type": "string",
-                  "description": "发货状态",
+                  "example": "发货状态",
                   "allowEmptyValue": false
                 },
                 "endTime": {
                   "type": "string",
-                  "description": "发货开始时间",
+                  "example": "发货开始时间",
                   "allowEmptyValue": false
                 },
                 "isFilterZero": {
                   "type": "boolean",
-                  "description": false,
+                  "example": false,
                   "description": "过滤拣货为0的数据 true：勾选，false：未勾选",
                   "allowEmptyValue": false
                 },
                 "ladingStatus": {
                   "type": "string",
-                  "description": "装车状态",
+                  "example": "装车状态",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -7662,7 +7272,7 @@
                 },
                 "lineStatus": {
                   "type": "string",
-                  "description": "投线状态",
+                  "example": "投线状态",
                   "allowEmptyValue": false
                 },
                 "offset": {
@@ -7671,7 +7281,7 @@
                 },
                 "orderCode": {
                   "type": "string",
-                  "description": "任务ID",
+                  "example": "任务ID",
                   "allowEmptyValue": false
                 },
                 "page": {
@@ -7680,37 +7290,37 @@
                 },
                 "pickingAreaCode": {
                   "type": "string",
-                  "description": "发货区域",
+                  "example": "发货区域",
                   "allowEmptyValue": false
                 },
                 "pickingQty": {
                   "type": "string",
-                  "description": "拣货数量",
+                  "example": "拣货数量",
                   "allowEmptyValue": false
                 },
                 "pickingStatus": {
                   "type": "string",
-                  "description": "拣货状态",
+                  "example": "拣货状态",
                   "allowEmptyValue": false
                 },
                 "planQty": {
                   "type": "string",
-                  "description": "计划数量",
+                  "example": "计划数量",
                   "allowEmptyValue": false
                 },
                 "productCode": {
                   "type": "string",
-                  "description": "商品编码",
+                  "example": "商品编码",
                   "allowEmptyValue": false
                 },
                 "productName": {
                   "type": "string",
-                  "description": "商品名称",
+                  "example": "商品名称",
                   "allowEmptyValue": false
                 },
                 "saleOrderCode": {
                   "type": "string",
-                  "description": "销售单",
+                  "example": "销售单",
                   "allowEmptyValue": false
                 },
                 "size": {
@@ -7719,12 +7329,12 @@
                 },
                 "sourceCode": {
                   "type": "string",
-                  "description": "出库单",
+                  "example": "出库单",
                   "allowEmptyValue": false
                 },
                 "splitGroupCode": {
                   "type": "string",
-                  "description": "拆单分组编码",
+                  "example": "拆单分组编码",
                   "allowEmptyValue": false
                 },
                 "splitGroupCodeList": {
@@ -7735,12 +7345,12 @@
                 },
                 "splitGroupName": {
                   "type": "string",
-                  "description": "拆单分组名称",
+                  "example": "拆单分组名称",
                   "allowEmptyValue": false
                 },
                 "startTime": {
                   "type": "string",
-                  "description": "发货开始时间",
+                  "example": "发货开始时间",
                   "allowEmptyValue": false
                 },
                 "subCustomCodeList": {
@@ -7756,22 +7366,21 @@
                 },
                 "subCustomName": {
                   "type": "string",
-                  "description": "子客户名称",
+                  "example": "子客户名称",
                   "allowEmptyValue": false
                 },
                 "taskType": {
                   "type": "string",
-                  "description": "任务类型",
+                  "example": "任务类型",
                   "allowEmptyValue": false
                 },
                 "warehouseCode": {
                   "type": "string",
-                  "description": "仓库编码",
+                  "example": "仓库编码",
                   "allowEmptyValue": false
                 }
               },
-              "title": "查询pda、电子秤任务请求参数",
-              "$$ref": "#/definitions/查询pda、电子秤任务请求参数"
+              "title": "查询pda、电子秤任务请求参数"
             }
           }
         ],
@@ -7793,8 +7402,7 @@
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«long»",
-              "$$ref": "#/definitions/CommonResponse«long»"
+              "title": "CommonResponse«long»"
             }
           }
         }
@@ -7802,13 +7410,9 @@
     },
     "/api/caisx/b2b/wms/pdaTaskPicking/pdaTaskPickingLodePage": {
       "post": {
-        "tags": [
-          "报表读服务"
-        ],
+        "tags": ["报表读服务"],
         "summary": "分拣任务查询",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -7839,28 +7443,28 @@
               "properties": {
                 "containerCode": {
                   "type": "string",
-                  "description": "容器号",
+                  "example": "容器号",
                   "allowEmptyValue": false
                 },
                 "deliveryStatus": {
                   "type": "string",
-                  "description": "发货状态",
+                  "example": "发货状态",
                   "allowEmptyValue": false
                 },
                 "endTime": {
                   "type": "string",
-                  "description": "发货开始时间",
+                  "example": "发货开始时间",
                   "allowEmptyValue": false
                 },
                 "isFilterZero": {
                   "type": "boolean",
-                  "description": false,
+                  "example": false,
                   "description": "过滤拣货为0的数据 true：勾选，false：未勾选",
                   "allowEmptyValue": false
                 },
                 "ladingStatus": {
                   "type": "string",
-                  "description": "装车状态",
+                  "example": "装车状态",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -7869,7 +7473,7 @@
                 },
                 "lineStatus": {
                   "type": "string",
-                  "description": "投线状态",
+                  "example": "投线状态",
                   "allowEmptyValue": false
                 },
                 "offset": {
@@ -7878,7 +7482,7 @@
                 },
                 "orderCode": {
                   "type": "string",
-                  "description": "任务ID",
+                  "example": "任务ID",
                   "allowEmptyValue": false
                 },
                 "page": {
@@ -7887,37 +7491,37 @@
                 },
                 "pickingAreaCode": {
                   "type": "string",
-                  "description": "发货区域",
+                  "example": "发货区域",
                   "allowEmptyValue": false
                 },
                 "pickingQty": {
                   "type": "string",
-                  "description": "拣货数量",
+                  "example": "拣货数量",
                   "allowEmptyValue": false
                 },
                 "pickingStatus": {
                   "type": "string",
-                  "description": "拣货状态",
+                  "example": "拣货状态",
                   "allowEmptyValue": false
                 },
                 "planQty": {
                   "type": "string",
-                  "description": "计划数量",
+                  "example": "计划数量",
                   "allowEmptyValue": false
                 },
                 "productCode": {
                   "type": "string",
-                  "description": "商品编码",
+                  "example": "商品编码",
                   "allowEmptyValue": false
                 },
                 "productName": {
                   "type": "string",
-                  "description": "商品名称",
+                  "example": "商品名称",
                   "allowEmptyValue": false
                 },
                 "saleOrderCode": {
                   "type": "string",
-                  "description": "销售单",
+                  "example": "销售单",
                   "allowEmptyValue": false
                 },
                 "size": {
@@ -7926,12 +7530,12 @@
                 },
                 "sourceCode": {
                   "type": "string",
-                  "description": "出库单",
+                  "example": "出库单",
                   "allowEmptyValue": false
                 },
                 "splitGroupCode": {
                   "type": "string",
-                  "description": "拆单分组编码",
+                  "example": "拆单分组编码",
                   "allowEmptyValue": false
                 },
                 "splitGroupCodeList": {
@@ -7942,12 +7546,12 @@
                 },
                 "splitGroupName": {
                   "type": "string",
-                  "description": "拆单分组名称",
+                  "example": "拆单分组名称",
                   "allowEmptyValue": false
                 },
                 "startTime": {
                   "type": "string",
-                  "description": "发货开始时间",
+                  "example": "发货开始时间",
                   "allowEmptyValue": false
                 },
                 "subCustomCodeList": {
@@ -7963,22 +7567,21 @@
                 },
                 "subCustomName": {
                   "type": "string",
-                  "description": "子客户名称",
+                  "example": "子客户名称",
                   "allowEmptyValue": false
                 },
                 "taskType": {
                   "type": "string",
-                  "description": "任务类型",
+                  "example": "任务类型",
                   "allowEmptyValue": false
                 },
                 "warehouseCode": {
                   "type": "string",
-                  "description": "仓库编码",
+                  "example": "仓库编码",
                   "allowEmptyValue": false
                 }
               },
-              "title": "查询pda、电子秤任务请求参数",
-              "$$ref": "#/definitions/查询pda、电子秤任务请求参数"
+              "title": "查询pda、电子秤任务请求参数"
             }
           }
         ],
@@ -8006,28 +7609,28 @@
                         "properties": {
                           "containerCode": {
                             "type": "string",
-                            "description": "容器号",
+                            "example": "容器号",
                             "allowEmptyValue": false
                           },
                           "deliveryStatus": {
                             "type": "string",
-                            "description": "发货状态",
+                            "example": "发货状态",
                             "allowEmptyValue": false
                           },
                           "endTime": {
                             "type": "string",
-                            "description": "发货开始时间",
+                            "example": "发货开始时间",
                             "allowEmptyValue": false
                           },
                           "isFilterZero": {
                             "type": "boolean",
-                            "description": false,
+                            "example": false,
                             "description": "过滤拣货为0的数据 true：勾选，false：未勾选",
                             "allowEmptyValue": false
                           },
                           "ladingStatus": {
                             "type": "string",
-                            "description": "装车状态",
+                            "example": "装车状态",
                             "allowEmptyValue": false
                           },
                           "limit": {
@@ -8036,7 +7639,7 @@
                           },
                           "lineStatus": {
                             "type": "string",
-                            "description": "投线状态",
+                            "example": "投线状态",
                             "allowEmptyValue": false
                           },
                           "offset": {
@@ -8045,7 +7648,7 @@
                           },
                           "orderCode": {
                             "type": "string",
-                            "description": "任务ID",
+                            "example": "任务ID",
                             "allowEmptyValue": false
                           },
                           "page": {
@@ -8054,37 +7657,37 @@
                           },
                           "pickingAreaCode": {
                             "type": "string",
-                            "description": "发货区域",
+                            "example": "发货区域",
                             "allowEmptyValue": false
                           },
                           "pickingQty": {
                             "type": "string",
-                            "description": "拣货数量",
+                            "example": "拣货数量",
                             "allowEmptyValue": false
                           },
                           "pickingStatus": {
                             "type": "string",
-                            "description": "拣货状态",
+                            "example": "拣货状态",
                             "allowEmptyValue": false
                           },
                           "planQty": {
                             "type": "string",
-                            "description": "计划数量",
+                            "example": "计划数量",
                             "allowEmptyValue": false
                           },
                           "productCode": {
                             "type": "string",
-                            "description": "商品编码",
+                            "example": "商品编码",
                             "allowEmptyValue": false
                           },
                           "productName": {
                             "type": "string",
-                            "description": "商品名称",
+                            "example": "商品名称",
                             "allowEmptyValue": false
                           },
                           "saleOrderCode": {
                             "type": "string",
-                            "description": "销售单",
+                            "example": "销售单",
                             "allowEmptyValue": false
                           },
                           "size": {
@@ -8093,12 +7696,12 @@
                           },
                           "sourceCode": {
                             "type": "string",
-                            "description": "出库单",
+                            "example": "出库单",
                             "allowEmptyValue": false
                           },
                           "splitGroupCode": {
                             "type": "string",
-                            "description": "拆单分组编码",
+                            "example": "拆单分组编码",
                             "allowEmptyValue": false
                           },
                           "splitGroupCodeList": {
@@ -8109,12 +7712,12 @@
                           },
                           "splitGroupName": {
                             "type": "string",
-                            "description": "拆单分组名称",
+                            "example": "拆单分组名称",
                             "allowEmptyValue": false
                           },
                           "startTime": {
                             "type": "string",
-                            "description": "发货开始时间",
+                            "example": "发货开始时间",
                             "allowEmptyValue": false
                           },
                           "subCustomCodeList": {
@@ -8130,22 +7733,21 @@
                           },
                           "subCustomName": {
                             "type": "string",
-                            "description": "子客户名称",
+                            "example": "子客户名称",
                             "allowEmptyValue": false
                           },
                           "taskType": {
                             "type": "string",
-                            "description": "任务类型",
+                            "example": "任务类型",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "description": "仓库编码",
+                            "example": "仓库编码",
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "查询pda、电子秤任务请求参数",
-                        "$$ref": "#/definitions/查询pda、电子秤任务请求参数"
+                        "title": "查询pda、电子秤任务请求参数"
                       }
                     },
                     "pages": {
@@ -8161,15 +7763,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«查询pda、电子秤任务请求参数»",
-                  "$$ref": "#/definitions/PageResponse«查询pda、电子秤任务请求参数»"
+                  "title": "PageResponse«查询pda、电子秤任务请求参数»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«PageResponse«查询pda、电子秤任务请求参数»»",
-              "$$ref": "#/definitions/CommonResponse«PageResponse«查询pda、电子秤任务请求参数»»"
+              "title": "CommonResponse«PageResponse«查询pda、电子秤任务请求参数»»"
             }
           }
         }
@@ -8177,13 +7777,9 @@
     },
     "/api/caisx/b2b/wms/reportManagement/eScaleStockOut": {
       "post": {
-        "tags": [
-          "报表读服务"
-        ],
+        "tags": ["报表读服务"],
         "summary": "分页查询发货缺货报表（电子秤）",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -8280,8 +7876,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "分页查询发货缺货请求参数",
-              "$$ref": "#/definitions/分页查询发货缺货请求参数"
+              "title": "分页查询发货缺货请求参数"
             }
           }
         ],
@@ -8312,32 +7907,31 @@
                         "properties": {
                           "availableQty": {
                             "type": "number",
-                            "description": "库存数量",
+                            "example": "库存数量",
                             "allowEmptyValue": false
                           },
                           "pickNum": {
                             "type": "number",
-                            "description": "电子秤已拣数量",
+                            "example": "电子秤已拣数量",
                             "allowEmptyValue": false
                           },
                           "productCode": {
                             "type": "string",
-                            "description": "商品编号",
+                            "example": "商品编号",
                             "allowEmptyValue": false
                           },
                           "productName": {
                             "type": "string",
-                            "description": "商品名称",
+                            "example": "商品名称",
                             "allowEmptyValue": false
                           },
                           "stockOutNum": {
                             "type": "number",
-                            "description": "缺货数量",
+                            "example": "缺货数量",
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "发货缺货查询返回信息",
-                        "$$ref": "#/definitions/发货缺货查询返回信息"
+                        "title": "发货缺货查询返回信息"
                       }
                     },
                     "pages": {
@@ -8353,12 +7947,10 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«发货缺货查询返回信息»",
-                  "$$ref": "#/definitions/PageResponse«发货缺货查询返回信息»"
+                  "title": "PageResponse«发货缺货查询返回信息»"
                 }
               },
-              "title": "Wrapper«PageResponse«发货缺货查询返回信息»»",
-              "$$ref": "#/definitions/Wrapper«PageResponse«发货缺货查询返回信息»»"
+              "title": "Wrapper«PageResponse«发货缺货查询返回信息»»"
             }
           }
         }
@@ -8366,13 +7958,9 @@
     },
     "/api/caisx/b2b/wms/reportManagement/localPurchases": {
       "post": {
-        "tags": [
-          "报表读服务"
-        ],
+        "tags": ["报表读服务"],
         "summary": "分页查询地采报表数据",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -8428,8 +8016,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "分页查询地采请求参数",
-              "$$ref": "#/definitions/分页查询地采请求参数"
+              "title": "分页查询地采请求参数"
             }
           }
         ],
@@ -8460,12 +8047,12 @@
                         "properties": {
                           "allocatedQty": {
                             "type": "number",
-                            "description": "已分配数量",
+                            "example": "已分配数量",
                             "allowEmptyValue": false
                           },
                           "declareLocalPurchaseQty": {
                             "type": "number",
-                            "description": "申报地采数量",
+                            "example": "申报地采数量",
                             "allowEmptyValue": false
                           },
                           "isChangeOrder": {
@@ -8475,57 +8062,56 @@
                           },
                           "localPurchaseSource": {
                             "type": "string",
-                            "description": "地采来源",
+                            "example": "地采来源",
                             "allowEmptyValue": false
                           },
                           "localPurchaseWarehousingQty": {
                             "type": "number",
-                            "description": "地采入库数量",
+                            "example": "地采入库数量",
                             "allowEmptyValue": false
                           },
                           "pickingQty": {
                             "type": "number",
-                            "description": "拣货数量",
+                            "example": "拣货数量",
                             "allowEmptyValue": false
                           },
                           "planDate": {
                             "type": "string",
-                            "description": "计划日期",
+                            "example": "计划日期",
                             "allowEmptyValue": false
                           },
                           "planQty": {
                             "type": "number",
-                            "description": "计划数量",
+                            "example": "计划数量",
                             "allowEmptyValue": false
                           },
                           "productCode": {
                             "type": "string",
-                            "description": "商品编号",
+                            "example": "商品编号",
                             "allowEmptyValue": false
                           },
                           "productName": {
                             "type": "string",
-                            "description": "商品名称",
+                            "example": "商品名称",
                             "allowEmptyValue": false
                           },
                           "purchaseGroup": {
                             "type": "string",
-                            "description": "采购组",
+                            "example": "采购组",
                             "allowEmptyValue": false
                           },
                           "unit": {
                             "type": "string",
-                            "description": "单位",
+                            "example": "单位",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "description": "仓库地点名称",
+                            "example": "仓库地点名称",
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "装车率查询返回信息",
-                        "$$ref": "#/definitions/装车率查询返回信息"
+                        "title": "装车率查询返回信息"
                       }
                     },
                     "pages": {
@@ -8541,12 +8127,10 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«装车率查询返回信息»",
-                  "$$ref": "#/definitions/PageResponse«装车率查询返回信息»"
+                  "title": "PageResponse«装车率查询返回信息»"
                 }
               },
-              "title": "Wrapper«PageResponse«装车率查询返回信息»»",
-              "$$ref": "#/definitions/Wrapper«PageResponse«装车率查询返回信息»»"
+              "title": "Wrapper«PageResponse«装车率查询返回信息»»"
             }
           }
         }
@@ -8554,13 +8138,9 @@
     },
     "/api/caisx/b2b/wms/nuclearGoods/nuclearGoodsLodePage": {
       "post": {
-        "tags": [
-          "报表读服务"
-        ],
+        "tags": ["报表读服务"],
         "summary": "核货数查询",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -8628,12 +8208,11 @@
                 },
                 "warehouseCode": {
                   "type": "string",
-                  "description": "仓库编码",
+                  "example": "仓库编码",
                   "allowEmptyValue": false
                 }
               },
-              "title": "NuclearGoodsLodePageRequest",
-              "$$ref": "#/definitions/NuclearGoodsLodePageRequest"
+              "title": "NuclearGoodsLodePageRequest"
             }
           }
         ],
@@ -8715,8 +8294,7 @@
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "NuclearGoodsLodePageResponse",
-                        "$$ref": "#/definitions/NuclearGoodsLodePageResponse"
+                        "title": "NuclearGoodsLodePageResponse"
                       }
                     },
                     "pages": {
@@ -8732,15 +8310,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "PageResponse«NuclearGoodsLodePageResponse»",
-                  "$$ref": "#/definitions/PageResponse«NuclearGoodsLodePageResponse»"
+                  "title": "PageResponse«NuclearGoodsLodePageResponse»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«PageResponse«NuclearGoodsLodePageResponse»»",
-              "$$ref": "#/definitions/CommonResponse«PageResponse«NuclearGoodsLodePageResponse»»"
+              "title": "CommonResponse«PageResponse«NuclearGoodsLodePageResponse»»"
             }
           }
         }
@@ -8748,13 +8324,9 @@
     },
     "/api/caisx/b2b/wms/shippedorders/agingReport": {
       "post": {
-        "tags": [
-          "报表读服务"
-        ],
+        "tags": ["报表读服务"],
         "summary": "签收时效报表",
-        "consumes": [
-          "application/json"
-        ],
+        "consumes": ["application/json"],
         "parameters": [
           {
             "name": "login-token",
@@ -8831,8 +8403,7 @@
                   "allowEmptyValue": false
                 }
               },
-              "title": "ShippedAgingReportParam",
-              "$$ref": "#/definitions/ShippedAgingReportParam"
+              "title": "ShippedAgingReportParam"
             }
           }
         ],
@@ -8945,8 +8516,7 @@
                             "allowEmptyValue": false
                           }
                         },
-                        "title": "ShippedAgingReportDomain",
-                        "$$ref": "#/definitions/ShippedAgingReportDomain"
+                        "title": "ShippedAgingReportDomain"
                       }
                     },
                     "size": {
@@ -8958,15 +8528,13 @@
                       "format": "int64"
                     }
                   },
-                  "title": "Page«ShippedAgingReportDomain»",
-                  "$$ref": "#/definitions/Page«ShippedAgingReportDomain»"
+                  "title": "Page«ShippedAgingReportDomain»"
                 },
                 "message": {
                   "type": "string"
                 }
               },
-              "title": "CommonResponse«Page«ShippedAgingReportDomain»»",
-              "$$ref": "#/definitions/CommonResponse«Page«ShippedAgingReportDomain»»"
+              "title": "CommonResponse«Page«ShippedAgingReportDomain»»"
             }
           }
         }
