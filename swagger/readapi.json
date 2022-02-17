@@ -2225,7 +2225,7 @@
                   "properties": {
                     "finished": {
                       "type": "boolean",
-                      "example": false,
+                      "description": false,
                       "description": "是否关单 true关单 false未关单",
                       "allowEmptyValue": false
                     },
@@ -2354,7 +2354,7 @@
                   "properties": {
                     "finished": {
                       "type": "boolean",
-                      "example": false,
+                      "description": false,
                       "description": "是否关单 true关单 false未关单",
                       "allowEmptyValue": false
                     },
@@ -3801,7 +3801,7 @@
                 },
                 "pushTaskQueue": {
                   "type": "boolean",
-                  "example": false,
+                  "description": false,
                   "description": "是否推送到任务队列，推送队列失败时自动取消",
                   "allowEmptyValue": false
                 },
@@ -4354,7 +4354,7 @@
                 },
                 "taskResult": {
                   "type": "boolean",
-                  "example": false,
+                  "description": false,
                   "description": "任务结果：true-成功，false-失败",
                   "allowEmptyValue": false
                 },
@@ -5614,12 +5614,12 @@
               "properties": {
                 "customerCode": {
                   "type": "string",
-                  "example": "主客户编码",
+                  "description": "主客户编码",
                   "allowEmptyValue": false
                 },
                 "groupId": {
                   "type": "string",
-                  "example": "客户分组Id",
+                  "description": "客户分组Id",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -5640,7 +5640,7 @@
                 },
                 "subCustomerCode": {
                   "type": "string",
-                  "example": "子客户编码",
+                  "description": "子客户编码",
                   "allowEmptyValue": false
                 }
               },
@@ -5673,71 +5673,71 @@
                         "properties": {
                           "createBy": {
                             "type": "string",
-                            "example": "创建人",
+                            "description": "创建人",
                             "allowEmptyValue": false
                           },
                           "createTime": {
                             "type": "string",
                             "format": "date-time",
-                            "example": "创建时间",
+                            "description": "创建时间",
                             "allowEmptyValue": false
                           },
                           "customerCode": {
                             "type": "string",
-                            "example": "主客户编码",
+                            "description": "主客户编码",
                             "allowEmptyValue": false
                           },
                           "customerName": {
                             "type": "string",
-                            "example": "主客户名称",
+                            "description": "主客户名称",
                             "allowEmptyValue": false
                           },
                           "groupDetailId": {
                             "type": "integer",
                             "format": "int64",
-                            "example": "分组详情id",
+                            "description": "分组详情id",
                             "allowEmptyValue": false
                           },
                           "groupId": {
                             "type": "integer",
                             "format": "int64",
-                            "example": "客户分组ID",
+                            "description": "客户分组ID",
                             "allowEmptyValue": false
                           },
                           "groupName": {
                             "type": "string",
-                            "example": "客户分组名称",
+                            "description": "客户分组名称",
                             "allowEmptyValue": false
                           },
                           "subCustomerCode": {
                             "type": "string",
-                            "example": "子客户编码",
+                            "description": "子客户编码",
                             "allowEmptyValue": false
                           },
                           "subCustomerName": {
                             "type": "string",
-                            "example": "子客户名称",
+                            "description": "子客户名称",
                             "allowEmptyValue": false
                           },
                           "updateBy": {
                             "type": "string",
-                            "example": "最后更新人",
+                            "description": "最后更新人",
                             "allowEmptyValue": false
                           },
                           "updateTime": {
                             "type": "string",
                             "format": "date-time",
-                            "example": "更新时间",
+                            "description": "更新时间",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "example": "地点名称",
+                            "description": "地点名称",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "example": "分组详情id",
+                            "description": "分组详情id",
                             "allowEmptyValue": false
                           }
                         },
@@ -5811,37 +5811,37 @@
               "properties": {
                 "containerCode": {
                   "type": "string",
-                  "example": "容器码",
+                  "description": "容器码",
                   "allowEmptyValue": false
                 },
                 "containerStatusCode": {
                   "type": "string",
-                  "example": "容器状态",
+                  "description": "容器状态",
                   "allowEmptyValue": false
                 },
                 "customerCode": {
                   "type": "string",
-                  "example": "客户编码",
+                  "description": "客户编码",
                   "allowEmptyValue": false
                 },
                 "customerName": {
                   "type": "string",
-                  "example": "客户名称",
+                  "description": "客户名称",
                   "allowEmptyValue": false
                 },
                 "driverCode": {
                   "type": "string",
-                  "example": "司机签到码",
+                  "description": "司机签到码",
                   "allowEmptyValue": false
                 },
                 "groupId": {
                   "type": "string",
-                  "example": "客户分组ID",
+                  "description": "客户分组ID",
                   "allowEmptyValue": false
                 },
                 "isVirtual": {
                   "type": "string",
-                  "example": "容器配置",
+                  "description": "容器配置",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -5858,7 +5858,7 @@
                 },
                 "parentContainerCode": {
                   "type": "string",
-                  "example": "父级容器码",
+                  "description": "父级容器码",
                   "allowEmptyValue": false
                 },
                 "size": {
@@ -5867,7 +5867,7 @@
                 },
                 "subCustomerCode": {
                   "type": "string",
-                  "example": "子客户编码",
+                  "description": "子客户编码",
                   "allowEmptyValue": false
                 }
               },
@@ -5900,122 +5900,122 @@
                         "properties": {
                           "containerCode": {
                             "type": "string",
-                            "example": "容器码",
+                            "description": "容器码",
                             "allowEmptyValue": false
                           },
                           "containerStatusCode": {
                             "type": "string",
-                            "example": "容器状态Code",
+                            "description": "容器状态Code",
                             "allowEmptyValue": false
                           },
                           "containerStatusName": {
                             "type": "string",
-                            "example": "容器状态Name",
+                            "description": "容器状态Name",
                             "allowEmptyValue": false
                           },
                           "createBy": {
                             "type": "string",
-                            "example": "创建者",
+                            "description": "创建者",
                             "allowEmptyValue": false
                           },
                           "createTime": {
                             "type": "string",
                             "format": "date-time",
-                            "example": "创建时间",
+                            "description": "创建时间",
                             "allowEmptyValue": false
                           },
                           "customerCode": {
                             "type": "string",
-                            "example": "客户编码",
+                            "description": "客户编码",
                             "allowEmptyValue": false
                           },
                           "customerName": {
                             "type": "string",
-                            "example": "客户名称",
+                            "description": "客户名称",
                             "allowEmptyValue": false
                           },
                           "driverCode": {
                             "type": "string",
-                            "example": "司机签到码",
+                            "description": "司机签到码",
                             "allowEmptyValue": false
                           },
                           "driverName": {
                             "type": "string",
-                            "example": "司机名称",
+                            "description": "司机名称",
                             "allowEmptyValue": false
                           },
                           "groupId": {
                             "type": "integer",
                             "format": "int64",
-                            "example": "分组ID",
+                            "description": "分组ID",
                             "allowEmptyValue": false
                           },
                           "groupName": {
                             "type": "string",
-                            "example": "客户分组名称",
+                            "description": "客户分组名称",
                             "allowEmptyValue": false
                           },
                           "id": {
                             "type": "integer",
                             "format": "int64",
-                            "example": "主键ID",
+                            "description": "主键ID",
                             "allowEmptyValue": false
                           },
                           "isVirtual": {
                             "type": "string",
-                            "example": "容器配置",
+                            "description": "容器配置",
                             "allowEmptyValue": false
                           },
                           "parentContainerCode": {
                             "type": "string",
-                            "example": "父级容器码",
+                            "description": "父级容器码",
                             "allowEmptyValue": false
                           },
                           "saleOrderCodes": {
                             "type": "string",
-                            "example": "销售单号",
+                            "description": "销售单号",
                             "allowEmptyValue": false
                           },
                           "shippingTime": {
                             "type": "string",
                             "format": "date-time",
-                            "example": "发货时间",
+                            "description": "发货时间",
                             "allowEmptyValue": false
                           },
                           "status": {
                             "type": "string",
-                            "example": "容器回收状态",
+                            "description": "容器回收状态",
                             "allowEmptyValue": false
                           },
                           "subCustomerCode": {
                             "type": "string",
-                            "example": "子客户编码",
+                            "description": "子客户编码",
                             "allowEmptyValue": false
                           },
                           "subCustomerName": {
                             "type": "string",
-                            "example": "子客户名称",
+                            "description": "子客户名称",
                             "allowEmptyValue": false
                           },
                           "updateBy": {
                             "type": "string",
-                            "example": "更新者",
+                            "description": "更新者",
                             "allowEmptyValue": false
                           },
                           "updateTime": {
                             "type": "string",
                             "format": "date-time",
-                            "example": "更新时间",
+                            "description": "更新时间",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "example": "仓库编码",
+                            "description": "仓库编码",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "example": "仓库名称",
+                            "description": "仓库名称",
                             "allowEmptyValue": false
                           }
                         },
@@ -6094,7 +6094,7 @@
                 },
                 "containerCode": {
                   "type": "string",
-                  "example": "容器码",
+                  "description": "容器码",
                   "allowEmptyValue": false
                 },
                 "endTime": {
@@ -6104,12 +6104,12 @@
                 },
                 "groupId": {
                   "type": "string",
-                  "example": "客户分组ID",
+                  "description": "客户分组ID",
                   "allowEmptyValue": false
                 },
                 "isVirtual": {
                   "type": "string",
-                  "example": "容器配置",
+                  "description": "容器配置",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -6131,12 +6131,12 @@
                 "status": {
                   "type": "integer",
                   "format": "int32",
-                  "example": "容器回收状态",
+                  "description": "容器回收状态",
                   "allowEmptyValue": false
                 },
                 "subCustomerCode": {
                   "type": "string",
-                  "example": "子客户编码",
+                  "description": "子客户编码",
                   "allowEmptyValue": false
                 }
               },
@@ -6169,122 +6169,122 @@
                         "properties": {
                           "containerCode": {
                             "type": "string",
-                            "example": "容器码",
+                            "description": "容器码",
                             "allowEmptyValue": false
                           },
                           "containerStatusCode": {
                             "type": "string",
-                            "example": "容器状态Code",
+                            "description": "容器状态Code",
                             "allowEmptyValue": false
                           },
                           "containerStatusName": {
                             "type": "string",
-                            "example": "容器状态Name",
+                            "description": "容器状态Name",
                             "allowEmptyValue": false
                           },
                           "createBy": {
                             "type": "string",
-                            "example": "创建者",
+                            "description": "创建者",
                             "allowEmptyValue": false
                           },
                           "createTime": {
                             "type": "string",
                             "format": "date-time",
-                            "example": "创建时间",
+                            "description": "创建时间",
                             "allowEmptyValue": false
                           },
                           "customerCode": {
                             "type": "string",
-                            "example": "客户编码",
+                            "description": "客户编码",
                             "allowEmptyValue": false
                           },
                           "customerName": {
                             "type": "string",
-                            "example": "客户名称",
+                            "description": "客户名称",
                             "allowEmptyValue": false
                           },
                           "driverCode": {
                             "type": "string",
-                            "example": "司机签到码",
+                            "description": "司机签到码",
                             "allowEmptyValue": false
                           },
                           "driverName": {
                             "type": "string",
-                            "example": "司机名称",
+                            "description": "司机名称",
                             "allowEmptyValue": false
                           },
                           "groupId": {
                             "type": "integer",
                             "format": "int64",
-                            "example": "分组ID",
+                            "description": "分组ID",
                             "allowEmptyValue": false
                           },
                           "groupName": {
                             "type": "string",
-                            "example": "客户分组名称",
+                            "description": "客户分组名称",
                             "allowEmptyValue": false
                           },
                           "id": {
                             "type": "integer",
                             "format": "int64",
-                            "example": "主键ID",
+                            "description": "主键ID",
                             "allowEmptyValue": false
                           },
                           "isVirtual": {
                             "type": "string",
-                            "example": "容器配置",
+                            "description": "容器配置",
                             "allowEmptyValue": false
                           },
                           "parentContainerCode": {
                             "type": "string",
-                            "example": "父级容器码",
+                            "description": "父级容器码",
                             "allowEmptyValue": false
                           },
                           "saleOrderCodes": {
                             "type": "string",
-                            "example": "销售单号",
+                            "description": "销售单号",
                             "allowEmptyValue": false
                           },
                           "shippingTime": {
                             "type": "string",
                             "format": "date-time",
-                            "example": "发货时间",
+                            "description": "发货时间",
                             "allowEmptyValue": false
                           },
                           "status": {
                             "type": "string",
-                            "example": "容器回收状态",
+                            "description": "容器回收状态",
                             "allowEmptyValue": false
                           },
                           "subCustomerCode": {
                             "type": "string",
-                            "example": "子客户编码",
+                            "description": "子客户编码",
                             "allowEmptyValue": false
                           },
                           "subCustomerName": {
                             "type": "string",
-                            "example": "子客户名称",
+                            "description": "子客户名称",
                             "allowEmptyValue": false
                           },
                           "updateBy": {
                             "type": "string",
-                            "example": "更新者",
+                            "description": "更新者",
                             "allowEmptyValue": false
                           },
                           "updateTime": {
                             "type": "string",
                             "format": "date-time",
-                            "example": "更新时间",
+                            "description": "更新时间",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "example": "仓库编码",
+                            "description": "仓库编码",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "example": "仓库名称",
+                            "description": "仓库名称",
                             "allowEmptyValue": false
                           }
                         },
@@ -7155,17 +7155,17 @@
               "properties": {
                 "containerCode": {
                   "type": "string",
-                  "example": "容器码",
+                  "description": "容器码",
                   "allowEmptyValue": false
                 },
                 "containerStatusCode": {
                   "type": "string",
-                  "example": "容器状态",
+                  "description": "容器状态",
                   "allowEmptyValue": false
                 },
                 "isVirtual": {
                   "type": "string",
-                  "example": "容器类型配置",
+                  "description": "容器类型配置",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -7178,7 +7178,7 @@
                 },
                 "outCode": {
                   "type": "string",
-                  "example": "出库单号",
+                  "description": "出库单号",
                   "allowEmptyValue": false
                 },
                 "page": {
@@ -7187,12 +7187,12 @@
                 },
                 "parentContainerCode": {
                   "type": "string",
-                  "example": "父级容器码",
+                  "description": "父级容器码",
                   "allowEmptyValue": false
                 },
                 "productCode": {
                   "type": "string",
-                  "example": "商品编码",
+                  "description": "商品编码",
                   "allowEmptyValue": false
                 },
                 "size": {
@@ -7201,27 +7201,27 @@
                 },
                 "status": {
                   "type": "string",
-                  "example": "容器状态",
+                  "description": "容器状态",
                   "allowEmptyValue": false
                 },
                 "subCustomerCode": {
                   "type": "string",
-                  "example": "客户编码",
+                  "description": "客户编码",
                   "allowEmptyValue": false
                 },
                 "subCustomerName": {
                   "type": "string",
-                  "example": "客户名称",
+                  "description": "客户名称",
                   "allowEmptyValue": false
                 },
                 "taskOrderCode": {
                   "type": "string",
-                  "example": "工单编码",
+                  "description": "工单编码",
                   "allowEmptyValue": false
                 },
                 "warehouseCode": {
                   "type": "string",
-                  "example": "仓库编码",
+                  "description": "仓库编码",
                   "allowEmptyValue": false
                 }
               },
@@ -7254,84 +7254,84 @@
                         "properties": {
                           "containerCode": {
                             "type": "string",
-                            "example": "容器码",
+                            "description": "容器码",
                             "allowEmptyValue": false
                           },
                           "containerStatusCode": {
                             "type": "integer",
                             "format": "int32",
-                            "example": "容器状态Code",
+                            "description": "容器状态Code",
                             "allowEmptyValue": false
                           },
                           "containerStatusName": {
                             "type": "string",
-                            "example": "容器状态Name",
+                            "description": "容器状态Name",
                             "allowEmptyValue": false
                           },
                           "createTime": {
                             "type": "string",
                             "format": "date-time",
-                            "example": "创建时间",
+                            "description": "创建时间",
                             "allowEmptyValue": false
                           },
                           "id": {
                             "type": "string",
-                            "example": "主键ID",
+                            "description": "主键ID",
                             "allowEmptyValue": false
                           },
                           "isVirtual": {
                             "type": "string",
-                            "example": "容器配置",
+                            "description": "容器配置",
                             "allowEmptyValue": false
                           },
                           "outCode": {
                             "type": "string",
-                            "example": "订单编码",
+                            "description": "订单编码",
                             "allowEmptyValue": false
                           },
                           "productCode": {
                             "type": "string",
-                            "example": "商品编码",
+                            "description": "商品编码",
                             "allowEmptyValue": false
                           },
                           "productName": {
                             "type": "string",
-                            "example": "商品名称",
+                            "description": "商品名称",
                             "allowEmptyValue": false
                           },
                           "qty": {
                             "type": "number",
-                            "example": "数量",
+                            "description": "数量",
                             "allowEmptyValue": false
                           },
                           "saleOrderCode": {
                             "type": "string",
-                            "example": "销售单号",
+                            "description": "销售单号",
                             "allowEmptyValue": false
                           },
                           "subCustomerCode": {
                             "type": "string",
-                            "example": "客户编码",
+                            "description": "客户编码",
                             "allowEmptyValue": false
                           },
                           "subCustomerName": {
                             "type": "string",
-                            "example": "客户名称",
+                            "description": "客户名称",
                             "allowEmptyValue": false
                           },
                           "taskOrderCode": {
                             "type": "string",
-                            "example": "任务编码",
+                            "description": "任务编码",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "example": "仓库编码",
+                            "description": "仓库编码",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "example": "仓库名称",
+                            "description": "仓库名称",
                             "allowEmptyValue": false
                           }
                         },
@@ -7405,38 +7405,38 @@
               "properties": {
                 "beginNumber": {
                   "type": "string",
-                  "example": "起始号码",
+                  "description": "起始号码",
                   "allowEmptyValue": false
                 },
                 "codePrefix": {
                   "type": "string",
-                  "example": "号码前缀",
+                  "description": "号码前缀",
                   "allowEmptyValue": false
                 },
                 "currentNumber": {
                   "type": "string",
-                  "example": "当前号码",
+                  "description": "当前号码",
                   "allowEmptyValue": false
                 },
                 "description": {
                   "type": "string",
-                  "example": "号段描述",
+                  "description": "号段描述",
                   "allowEmptyValue": false
                 },
                 "endNumber": {
                   "type": "string",
-                  "example": "结束号码",
+                  "description": "结束号码",
                   "allowEmptyValue": false
                 },
                 "id": {
                   "type": "integer",
                   "format": "int64",
-                  "example": "id",
+                  "description": "id",
                   "allowEmptyValue": false
                 },
                 "isVirtual": {
                   "type": "string",
-                  "example": "容器配置",
+                  "description": "容器配置",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -7457,12 +7457,12 @@
                 },
                 "warehouseCode": {
                   "type": "string",
-                  "example": "仓库编码",
+                  "description": "仓库编码",
                   "allowEmptyValue": false
                 },
                 "warehouseName": {
                   "type": "string",
-                  "example": "仓库名称",
+                  "description": "仓库名称",
                   "allowEmptyValue": false
                 }
               },
@@ -7495,70 +7495,70 @@
                         "properties": {
                           "beginNumber": {
                             "type": "string",
-                            "example": "起始号码",
+                            "description": "起始号码",
                             "allowEmptyValue": false
                           },
                           "codePrefix": {
                             "type": "string",
-                            "example": "号码前缀",
+                            "description": "号码前缀",
                             "allowEmptyValue": false
                           },
                           "createBy": {
                             "type": "string",
-                            "example": "创建者",
+                            "description": "创建者",
                             "allowEmptyValue": false
                           },
                           "createTime": {
                             "type": "string",
                             "format": "date-time",
-                            "example": "创建时间",
+                            "description": "创建时间",
                             "allowEmptyValue": false
                           },
                           "currentNumber": {
                             "type": "string",
-                            "example": "当前号码",
+                            "description": "当前号码",
                             "allowEmptyValue": false
                           },
                           "description": {
                             "type": "string",
-                            "example": "号段描述",
+                            "description": "号段描述",
                             "allowEmptyValue": false
                           },
                           "endNumber": {
                             "type": "string",
-                            "example": "结束号码",
+                            "description": "结束号码",
                             "allowEmptyValue": false
                           },
                           "id": {
                             "type": "integer",
                             "format": "int64",
-                            "example": "id",
+                            "description": "id",
                             "allowEmptyValue": false
                           },
                           "isVirtual": {
                             "type": "string",
-                            "example": "容器配置",
+                            "description": "容器配置",
                             "allowEmptyValue": false
                           },
                           "updateBy": {
                             "type": "string",
-                            "example": "更新者",
+                            "description": "更新者",
                             "allowEmptyValue": false
                           },
                           "updateTime": {
                             "type": "string",
                             "format": "date-time",
-                            "example": "更新时间",
+                            "description": "更新时间",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "example": "仓库编码",
+                            "description": "仓库编码",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "example": "仓库名称",
+                            "description": "仓库名称",
                             "allowEmptyValue": false
                           }
                         },
@@ -7632,28 +7632,28 @@
               "properties": {
                 "containerCode": {
                   "type": "string",
-                  "example": "容器号",
+                  "description": "容器号",
                   "allowEmptyValue": false
                 },
                 "deliveryStatus": {
                   "type": "string",
-                  "example": "发货状态",
+                  "description": "发货状态",
                   "allowEmptyValue": false
                 },
                 "endTime": {
                   "type": "string",
-                  "example": "发货开始时间",
+                  "description": "发货开始时间",
                   "allowEmptyValue": false
                 },
                 "isFilterZero": {
                   "type": "boolean",
-                  "example": false,
+                  "description": false,
                   "description": "过滤拣货为0的数据 true：勾选，false：未勾选",
                   "allowEmptyValue": false
                 },
                 "ladingStatus": {
                   "type": "string",
-                  "example": "装车状态",
+                  "description": "装车状态",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -7662,7 +7662,7 @@
                 },
                 "lineStatus": {
                   "type": "string",
-                  "example": "投线状态",
+                  "description": "投线状态",
                   "allowEmptyValue": false
                 },
                 "offset": {
@@ -7671,7 +7671,7 @@
                 },
                 "orderCode": {
                   "type": "string",
-                  "example": "任务ID",
+                  "description": "任务ID",
                   "allowEmptyValue": false
                 },
                 "page": {
@@ -7680,37 +7680,37 @@
                 },
                 "pickingAreaCode": {
                   "type": "string",
-                  "example": "发货区域",
+                  "description": "发货区域",
                   "allowEmptyValue": false
                 },
                 "pickingQty": {
                   "type": "string",
-                  "example": "拣货数量",
+                  "description": "拣货数量",
                   "allowEmptyValue": false
                 },
                 "pickingStatus": {
                   "type": "string",
-                  "example": "拣货状态",
+                  "description": "拣货状态",
                   "allowEmptyValue": false
                 },
                 "planQty": {
                   "type": "string",
-                  "example": "计划数量",
+                  "description": "计划数量",
                   "allowEmptyValue": false
                 },
                 "productCode": {
                   "type": "string",
-                  "example": "商品编码",
+                  "description": "商品编码",
                   "allowEmptyValue": false
                 },
                 "productName": {
                   "type": "string",
-                  "example": "商品名称",
+                  "description": "商品名称",
                   "allowEmptyValue": false
                 },
                 "saleOrderCode": {
                   "type": "string",
-                  "example": "销售单",
+                  "description": "销售单",
                   "allowEmptyValue": false
                 },
                 "size": {
@@ -7719,12 +7719,12 @@
                 },
                 "sourceCode": {
                   "type": "string",
-                  "example": "出库单",
+                  "description": "出库单",
                   "allowEmptyValue": false
                 },
                 "splitGroupCode": {
                   "type": "string",
-                  "example": "拆单分组编码",
+                  "description": "拆单分组编码",
                   "allowEmptyValue": false
                 },
                 "splitGroupCodeList": {
@@ -7735,12 +7735,12 @@
                 },
                 "splitGroupName": {
                   "type": "string",
-                  "example": "拆单分组名称",
+                  "description": "拆单分组名称",
                   "allowEmptyValue": false
                 },
                 "startTime": {
                   "type": "string",
-                  "example": "发货开始时间",
+                  "description": "发货开始时间",
                   "allowEmptyValue": false
                 },
                 "subCustomCodeList": {
@@ -7756,17 +7756,17 @@
                 },
                 "subCustomName": {
                   "type": "string",
-                  "example": "子客户名称",
+                  "description": "子客户名称",
                   "allowEmptyValue": false
                 },
                 "taskType": {
                   "type": "string",
-                  "example": "任务类型",
+                  "description": "任务类型",
                   "allowEmptyValue": false
                 },
                 "warehouseCode": {
                   "type": "string",
-                  "example": "仓库编码",
+                  "description": "仓库编码",
                   "allowEmptyValue": false
                 }
               },
@@ -7839,28 +7839,28 @@
               "properties": {
                 "containerCode": {
                   "type": "string",
-                  "example": "容器号",
+                  "description": "容器号",
                   "allowEmptyValue": false
                 },
                 "deliveryStatus": {
                   "type": "string",
-                  "example": "发货状态",
+                  "description": "发货状态",
                   "allowEmptyValue": false
                 },
                 "endTime": {
                   "type": "string",
-                  "example": "发货开始时间",
+                  "description": "发货开始时间",
                   "allowEmptyValue": false
                 },
                 "isFilterZero": {
                   "type": "boolean",
-                  "example": false,
+                  "description": false,
                   "description": "过滤拣货为0的数据 true：勾选，false：未勾选",
                   "allowEmptyValue": false
                 },
                 "ladingStatus": {
                   "type": "string",
-                  "example": "装车状态",
+                  "description": "装车状态",
                   "allowEmptyValue": false
                 },
                 "limit": {
@@ -7869,7 +7869,7 @@
                 },
                 "lineStatus": {
                   "type": "string",
-                  "example": "投线状态",
+                  "description": "投线状态",
                   "allowEmptyValue": false
                 },
                 "offset": {
@@ -7878,7 +7878,7 @@
                 },
                 "orderCode": {
                   "type": "string",
-                  "example": "任务ID",
+                  "description": "任务ID",
                   "allowEmptyValue": false
                 },
                 "page": {
@@ -7887,37 +7887,37 @@
                 },
                 "pickingAreaCode": {
                   "type": "string",
-                  "example": "发货区域",
+                  "description": "发货区域",
                   "allowEmptyValue": false
                 },
                 "pickingQty": {
                   "type": "string",
-                  "example": "拣货数量",
+                  "description": "拣货数量",
                   "allowEmptyValue": false
                 },
                 "pickingStatus": {
                   "type": "string",
-                  "example": "拣货状态",
+                  "description": "拣货状态",
                   "allowEmptyValue": false
                 },
                 "planQty": {
                   "type": "string",
-                  "example": "计划数量",
+                  "description": "计划数量",
                   "allowEmptyValue": false
                 },
                 "productCode": {
                   "type": "string",
-                  "example": "商品编码",
+                  "description": "商品编码",
                   "allowEmptyValue": false
                 },
                 "productName": {
                   "type": "string",
-                  "example": "商品名称",
+                  "description": "商品名称",
                   "allowEmptyValue": false
                 },
                 "saleOrderCode": {
                   "type": "string",
-                  "example": "销售单",
+                  "description": "销售单",
                   "allowEmptyValue": false
                 },
                 "size": {
@@ -7926,12 +7926,12 @@
                 },
                 "sourceCode": {
                   "type": "string",
-                  "example": "出库单",
+                  "description": "出库单",
                   "allowEmptyValue": false
                 },
                 "splitGroupCode": {
                   "type": "string",
-                  "example": "拆单分组编码",
+                  "description": "拆单分组编码",
                   "allowEmptyValue": false
                 },
                 "splitGroupCodeList": {
@@ -7942,12 +7942,12 @@
                 },
                 "splitGroupName": {
                   "type": "string",
-                  "example": "拆单分组名称",
+                  "description": "拆单分组名称",
                   "allowEmptyValue": false
                 },
                 "startTime": {
                   "type": "string",
-                  "example": "发货开始时间",
+                  "description": "发货开始时间",
                   "allowEmptyValue": false
                 },
                 "subCustomCodeList": {
@@ -7963,17 +7963,17 @@
                 },
                 "subCustomName": {
                   "type": "string",
-                  "example": "子客户名称",
+                  "description": "子客户名称",
                   "allowEmptyValue": false
                 },
                 "taskType": {
                   "type": "string",
-                  "example": "任务类型",
+                  "description": "任务类型",
                   "allowEmptyValue": false
                 },
                 "warehouseCode": {
                   "type": "string",
-                  "example": "仓库编码",
+                  "description": "仓库编码",
                   "allowEmptyValue": false
                 }
               },
@@ -8006,28 +8006,28 @@
                         "properties": {
                           "containerCode": {
                             "type": "string",
-                            "example": "容器号",
+                            "description": "容器号",
                             "allowEmptyValue": false
                           },
                           "deliveryStatus": {
                             "type": "string",
-                            "example": "发货状态",
+                            "description": "发货状态",
                             "allowEmptyValue": false
                           },
                           "endTime": {
                             "type": "string",
-                            "example": "发货开始时间",
+                            "description": "发货开始时间",
                             "allowEmptyValue": false
                           },
                           "isFilterZero": {
                             "type": "boolean",
-                            "example": false,
+                            "description": false,
                             "description": "过滤拣货为0的数据 true：勾选，false：未勾选",
                             "allowEmptyValue": false
                           },
                           "ladingStatus": {
                             "type": "string",
-                            "example": "装车状态",
+                            "description": "装车状态",
                             "allowEmptyValue": false
                           },
                           "limit": {
@@ -8036,7 +8036,7 @@
                           },
                           "lineStatus": {
                             "type": "string",
-                            "example": "投线状态",
+                            "description": "投线状态",
                             "allowEmptyValue": false
                           },
                           "offset": {
@@ -8045,7 +8045,7 @@
                           },
                           "orderCode": {
                             "type": "string",
-                            "example": "任务ID",
+                            "description": "任务ID",
                             "allowEmptyValue": false
                           },
                           "page": {
@@ -8054,37 +8054,37 @@
                           },
                           "pickingAreaCode": {
                             "type": "string",
-                            "example": "发货区域",
+                            "description": "发货区域",
                             "allowEmptyValue": false
                           },
                           "pickingQty": {
                             "type": "string",
-                            "example": "拣货数量",
+                            "description": "拣货数量",
                             "allowEmptyValue": false
                           },
                           "pickingStatus": {
                             "type": "string",
-                            "example": "拣货状态",
+                            "description": "拣货状态",
                             "allowEmptyValue": false
                           },
                           "planQty": {
                             "type": "string",
-                            "example": "计划数量",
+                            "description": "计划数量",
                             "allowEmptyValue": false
                           },
                           "productCode": {
                             "type": "string",
-                            "example": "商品编码",
+                            "description": "商品编码",
                             "allowEmptyValue": false
                           },
                           "productName": {
                             "type": "string",
-                            "example": "商品名称",
+                            "description": "商品名称",
                             "allowEmptyValue": false
                           },
                           "saleOrderCode": {
                             "type": "string",
-                            "example": "销售单",
+                            "description": "销售单",
                             "allowEmptyValue": false
                           },
                           "size": {
@@ -8093,12 +8093,12 @@
                           },
                           "sourceCode": {
                             "type": "string",
-                            "example": "出库单",
+                            "description": "出库单",
                             "allowEmptyValue": false
                           },
                           "splitGroupCode": {
                             "type": "string",
-                            "example": "拆单分组编码",
+                            "description": "拆单分组编码",
                             "allowEmptyValue": false
                           },
                           "splitGroupCodeList": {
@@ -8109,12 +8109,12 @@
                           },
                           "splitGroupName": {
                             "type": "string",
-                            "example": "拆单分组名称",
+                            "description": "拆单分组名称",
                             "allowEmptyValue": false
                           },
                           "startTime": {
                             "type": "string",
-                            "example": "发货开始时间",
+                            "description": "发货开始时间",
                             "allowEmptyValue": false
                           },
                           "subCustomCodeList": {
@@ -8130,17 +8130,17 @@
                           },
                           "subCustomName": {
                             "type": "string",
-                            "example": "子客户名称",
+                            "description": "子客户名称",
                             "allowEmptyValue": false
                           },
                           "taskType": {
                             "type": "string",
-                            "example": "任务类型",
+                            "description": "任务类型",
                             "allowEmptyValue": false
                           },
                           "warehouseCode": {
                             "type": "string",
-                            "example": "仓库编码",
+                            "description": "仓库编码",
                             "allowEmptyValue": false
                           }
                         },
@@ -8312,27 +8312,27 @@
                         "properties": {
                           "availableQty": {
                             "type": "number",
-                            "example": "库存数量",
+                            "description": "库存数量",
                             "allowEmptyValue": false
                           },
                           "pickNum": {
                             "type": "number",
-                            "example": "电子秤已拣数量",
+                            "description": "电子秤已拣数量",
                             "allowEmptyValue": false
                           },
                           "productCode": {
                             "type": "string",
-                            "example": "商品编号",
+                            "description": "商品编号",
                             "allowEmptyValue": false
                           },
                           "productName": {
                             "type": "string",
-                            "example": "商品名称",
+                            "description": "商品名称",
                             "allowEmptyValue": false
                           },
                           "stockOutNum": {
                             "type": "number",
-                            "example": "缺货数量",
+                            "description": "缺货数量",
                             "allowEmptyValue": false
                           }
                         },
@@ -8460,12 +8460,12 @@
                         "properties": {
                           "allocatedQty": {
                             "type": "number",
-                            "example": "已分配数量",
+                            "description": "已分配数量",
                             "allowEmptyValue": false
                           },
                           "declareLocalPurchaseQty": {
                             "type": "number",
-                            "example": "申报地采数量",
+                            "description": "申报地采数量",
                             "allowEmptyValue": false
                           },
                           "isChangeOrder": {
@@ -8475,52 +8475,52 @@
                           },
                           "localPurchaseSource": {
                             "type": "string",
-                            "example": "地采来源",
+                            "description": "地采来源",
                             "allowEmptyValue": false
                           },
                           "localPurchaseWarehousingQty": {
                             "type": "number",
-                            "example": "地采入库数量",
+                            "description": "地采入库数量",
                             "allowEmptyValue": false
                           },
                           "pickingQty": {
                             "type": "number",
-                            "example": "拣货数量",
+                            "description": "拣货数量",
                             "allowEmptyValue": false
                           },
                           "planDate": {
                             "type": "string",
-                            "example": "计划日期",
+                            "description": "计划日期",
                             "allowEmptyValue": false
                           },
                           "planQty": {
                             "type": "number",
-                            "example": "计划数量",
+                            "description": "计划数量",
                             "allowEmptyValue": false
                           },
                           "productCode": {
                             "type": "string",
-                            "example": "商品编号",
+                            "description": "商品编号",
                             "allowEmptyValue": false
                           },
                           "productName": {
                             "type": "string",
-                            "example": "商品名称",
+                            "description": "商品名称",
                             "allowEmptyValue": false
                           },
                           "purchaseGroup": {
                             "type": "string",
-                            "example": "采购组",
+                            "description": "采购组",
                             "allowEmptyValue": false
                           },
                           "unit": {
                             "type": "string",
-                            "example": "单位",
+                            "description": "单位",
                             "allowEmptyValue": false
                           },
                           "warehouseName": {
                             "type": "string",
-                            "example": "仓库地点名称",
+                            "description": "仓库地点名称",
                             "allowEmptyValue": false
                           }
                         },
@@ -8628,7 +8628,7 @@
                 },
                 "warehouseCode": {
                   "type": "string",
-                  "example": "仓库编码",
+                  "description": "仓库编码",
                   "allowEmptyValue": false
                 }
               },
